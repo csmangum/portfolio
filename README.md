@@ -8,8 +8,10 @@ The goal of this repository is to store all my working projects, scripts I devel
     - Includes detailed exploratory notebook and data cleaning.
     - Utilized feature selection techniques including variance threshold and Step-Forward selection.
     - Culminating on an optimized Gradient Boosted regressor model.
-  - [California Housing Market](https://github.com/csmangum/portfolio/blob/master/Projects/Home_Value_Prediction/California_Housing_Market.ipynb): Predict housing prices in California (Supervised Regression).
-  - [Predicting Employee Retention](https://github.com/csmangum/portfolio/blob/master/Projects/Employee_Satisfaction/Employee_Satisfaction.ipynb): Determine why employees are leaving (Supervised Classification).
+  - [California Housing Market](https://github.com/csmangum/portfolio/blob/master/Projects/Home_Value_Prediction/California_Housing_Market.ipynb): 
+    - Predict housing prices in California.
+  - [Predicting Employee Retention](https://github.com/csmangum/portfolio/blob/master/Projects/Employee_Satisfaction/Employee_Satisfaction.ipynb): 
+    - Determine why employees are leaving.
 
 
 ## Going Deep In Machine Learning:
