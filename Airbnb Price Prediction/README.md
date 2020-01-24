@@ -5,6 +5,7 @@
 4. [Feature Selection](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/5.%20Feature%20Selection.ipynb)
 5. [Model Selection and Optimization](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/6.%20Model%20Selection%20%26%20Optimization.ipynb) 
 
+![](output.gif)
 
 ## Introduction
 
