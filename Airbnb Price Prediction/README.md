@@ -1,4 +1,4 @@
-# Predict Airbnb Listing Revenue
+# Predict Airbnb Listing Price
 ![](airbnb_growth.gif)
 
 ## Notebooks
