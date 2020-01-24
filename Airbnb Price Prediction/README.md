@@ -7,6 +7,7 @@
 
 ![](output.gif)
 
+
 ## Introduction
 
 ## Data Exploration
