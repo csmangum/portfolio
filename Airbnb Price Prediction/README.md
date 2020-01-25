@@ -1,10 +1,10 @@
 # Predict Airbnb Listing Price
-## Introduction
 Airbnb is a popular and fast-growing alternative to traditional lodging options. It opened in 2008 in San Francisco California and quickly grew around the world. Los Angeles California is a diverse and popular destination with multiple amusement parks, beaches, and outdoor locations.
 
 The purpose of this project is to predict listing price based on several possible features available from data collected through [Inside Airbnb](http://insideairbnb.com/get-the-data.html)
 
 ![](airbnb_growth.gif)
+***
 
 ## Data Exploration
 
