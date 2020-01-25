@@ -7,6 +7,7 @@ The purpose of this project is to predict listing price based on several possibl
 ***
 
 ## Data Exploration
+![](response_time.png)
 
 ## Model Development
 
