@@ -7,7 +7,7 @@ The purpose of this project is to predict listing price based on several possibl
 ***
 
 ## Data Exploration
-![](response_time.png){:height="700px" width="400px"}
+<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/response_time.png" width="100">
 ![](response_time.png)
 
 ### Feature Selection
