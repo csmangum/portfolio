@@ -13,7 +13,7 @@ The purpose of this project is to predict listing price based on several possibl
 ***
 
 ## Feature Selection
-![](feature_importance.png)
+![](feature_importance.png =100x)
 ![](cumulative_importance.png)
 
 ***
