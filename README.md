@@ -1,9 +1,6 @@
 ## Primary Portfolio Project: 
   - [Airbnb Price Prediction](https://github.com/csmangum/portfolio/tree/master/Airbnb%20Price%20Prediction): 
-    - Large-scale project looking to predict listing price.
-    - Includes detailed exploratory notebook and data cleaning.
-    - Utilized feature selection techniques including variance threshold and Step-Forward selection.
-    - Culminating on an optimized Gradient Boosted regressor model.
+<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/airbnb_growth.gif">
 
 ## Secondary Portfolio Projects: 
   - [California Housing Market](https://github.com/csmangum/portfolio/blob/master/Projects/Home_Value_Prediction/California_Housing_Market.ipynb): 
