@@ -11,6 +11,7 @@
   - [Predicting Employee Retention](https://github.com/csmangum/portfolio/blob/master/Projects/Employee_Satisfaction/Employee_Satisfaction.ipynb): 
     - Determine why employees are leaving.
 
+## Data Visualizations:
 
 ## Going Deep In Machine Learning:
   - [Decision Tree Classification](https://github.com/csmangum/portfolio/blob/master/Machine%20Learning/Decision_Trees_Classification.ipynb)
