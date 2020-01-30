@@ -1,5 +1,5 @@
 ## Primary Portfolio Project: 
- ### - [Airbnb Price Prediction](https://github.com/csmangum/portfolio/tree/master/Airbnb%20Price%20Prediction): 
+ ### [Airbnb Price Prediction](https://github.com/csmangum/portfolio/tree/master/Airbnb%20Price%20Prediction)
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/airbnb_growth.gif">
 
 ## Secondary Portfolio Projects: 
