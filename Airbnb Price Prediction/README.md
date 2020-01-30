@@ -7,7 +7,7 @@ The purpose of this project is to predict listing price based on several possibl
 ***
 
 ## Data Exploration
-![](response_time.png | width=100)
+![](response_time.png){:height="700px" width="400px"}
 ![](response_time.png)
 
 ### Feature Selection
