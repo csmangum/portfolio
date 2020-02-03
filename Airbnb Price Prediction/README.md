@@ -9,15 +9,16 @@ The purpose of this project is to predict listing price based on several possibl
 ## Initial Cleaning
 
 ### Findings
-Many columns have missing data and four columns have more than 90% of values missing
-Four other columns had only one unique values
+* Many columns have missing data and four columns have more than 90% of values missing
+* Four other columns had only one unique values
+
 ### Actions
-I will removed these columns that have more than 90% of values missing. Other columns with missing data will be handled later with imputation
-I removed columns 'experiences_offered', 'country_code', 'country', 'has_availability' due to having only one unique value
-Converted all the columns to appropriate data type
-Changed T/F columns to binary
-Cleaned the currency related fields, zipcodes, and percentage columns
-Removed listings with $600 or more daily price. Around 95% of listings are below this amount
+* I will removed these columns that have more than 90% of values missing. Other columns with missing data will be handled later with imputation
+* I removed columns 'experiences_offered', 'country_code', 'country', 'has_availability' due to having only one unique value
+* Converted all the columns to appropriate data type
+* Changed T/F columns to binary
+* Cleaned the currency related fields, zipcodes, and percentage columns
+* Removed listings with $600 or more daily price. Around 95% of listings are below this amount
 ***
 
 ## Data Exploration
