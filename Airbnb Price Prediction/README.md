@@ -24,6 +24,13 @@ The purpose of this project is to predict listing price based on several possibl
 ## Data Exploration
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/response_time.png" width="500">
 
+### Findings
+* Most hosts respond within an hour
+* Most hosts are neither verified or superhosts
+* Bed type, requires license, and host has a profile pic are not a useful field
+* There are a handful of features that are correlated with price
+* A few features are highly correlated with each other
+* The target variable is skewed and will need to be log transformed 
 
 
 ***
@@ -31,6 +38,20 @@ The purpose of this project is to predict listing price based on several possibl
 ## Feature Selection
 ![](feature_importance.png)
 ![](cumulative_importance.png)
+
+### Findings
+* The wireless accommodation category has a low correlation
+* Bedrooms are the most important feature
+
+### Actions
+* Created a variable for when a security deposit is required
+* Bundled misc property types in 'other' category
+* Created new features based on the amenities text field
+* Removed 'zipcode', 'availability_60', 'availability_90', 'bed_type', 'host_has_profile_pic', 'requires_license'
+* One-hot-encoded all categorical features
+* Imputed all missing values with the median value
+* Log transformed the price target
+* I used step forward feature selection to choose 10 features
 
 ***
 
