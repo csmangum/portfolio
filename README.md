@@ -1,5 +1,5 @@
 ## Primary Portfolio Project: 
-[<img src="https://github.com/csmangum/portfolio/blob/master/airbnb_title.png" width="500">](https://github.com/csmangum/portfolio/tree/master/Airbnb%20Price%20Prediction)
+[<img src="https://github.com/csmangum/portfolio/blob/master/airbnb_title.png" width="700">](https://github.com/csmangum/portfolio/tree/master/Airbnb%20Price%20Prediction)
 
 [<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/airbnb_growth.gif">](https://github.com/csmangum/portfolio/tree/master/Airbnb%20Price%20Prediction)
 
