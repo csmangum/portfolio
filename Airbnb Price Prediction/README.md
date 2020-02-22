@@ -4,6 +4,7 @@
 
 The purpose of this project is to predict listing price based on several possible features available from data collected through [Inside Airbnb](http://insideairbnb.com/get-the-data.html). This high-level overview will showcase my work with the data while there will be links to the specific notebooks with all the work completed to achieve project results.
 
+
 [<img src="https://github.com/csmangum/portfolio/blob/master/img/quad_v2.gif">]
 
 ***
