@@ -55,7 +55,7 @@ The purpose of this project is to predict listing price based on several possibl
 
 ***
 
-## Model Development
+## Initial Model Development
 
 | Model | R2 | RMSE | Median Absolute Error |
 | :---: | :---: | :---: | :---: |
@@ -63,11 +63,21 @@ The purpose of this project is to predict listing price based on several possibl
 | Random Forest | 0 | 0 | 0 |
 | Light GBM | 0 | 0 | 0 |
 
-### Initial Model
+### Best Performing Model
 ![](initial_model.png)
+
+## Final Model Development
+
+| Model | R2 | RMSE | Median Absolute Error |
+| :---: | :---: | :---: | :---: |
+| Linear Regression | 0 | 0 | 0 |
+| Random Forest | 0 | 0 | 0 |
+| Light GBM | 0 | 0 | 0 |
 
 ### Optimized Model
 ![](final_model.png)
+
+## Natural Language Processing
 
 ## Conclusion
 
