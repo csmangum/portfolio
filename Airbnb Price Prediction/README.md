@@ -70,7 +70,7 @@ The purpose of this project is to predict listing price based on several possibl
 | Linear Regression | .741 | $52.00 | 19.7 |
 | Random Forest | .742 | $49.10 | 20.1 |
 | Gradient Boosted | .812 | $42.90 | 16.8 |
-| Light GBM | .852 | $38.20 | 15.0 |
+| Light GBM | **.852** | **$38.20** | **15.0** |
 
 
 ### Best Performing Model
