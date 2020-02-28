@@ -81,14 +81,14 @@ The purpose of this project is to predict listing price based on several possibl
 ### Feature Selection (Step Forward)
 | Model | R2 | RMSE | Median Absolute Error |
 | :---: | :---: | :---: | :---: |
-| Gradient Boosted | .807 | $44.31 | ? |
+| Gradient Boosted | .807 | $44.31 | 17.1 |
 | Light GBM | .809 | $44.03 | 15.9 |
 
 ### All Features
 | Model | R2 | RMSE | Median Absolute Error |
 | :---: | :---: | :---: | :---: |
-| Gradient Boosted | .807 | $44.31 | ? |
-| Light GBM | .809 | $44.03 | 15.9 |
+| Gradient Boosted | .819 | $43.02 | 16.8 |
+| Light GBM | .825 | $42.15 | 15.2 |
 
 ### Optimized Model
 ![](final_model.png)
@@ -102,6 +102,20 @@ The purpose of this project is to predict listing price based on several possibl
 | Random Forest | .739 | $49.30 | 20.2 |
 | Gradient Boosted | .812 | $43.00 | 16.7 |
 | Light GBM | .854 | $37.90 | 14.7 |
+
+### Optimized
+| Model | R2 | RMSE | Median Absolute Error |
+| :---: | :---: | :---: | :---: |
+| Gradient Boosted | .807 | $44.02 | 15.9 |
+| Light GBM | .809 | $43.67 | 15.7 |
+
+### With NLP & All Features
+| Model | R2 | RMSE | Median Absolute Error |
+| :---: | :---: | :---: | :---: |
+| Linear Regression | .783 | $47.40 | 17.4 |
+| Random Forest | .744 | $48.80 | 20.0 |
+| Gradient Boosted | .824 | $41.70 | 16.0 |
+| Light GBM | .877 | $35.00 | 13.3 |
 
 ### Optimized
 | Model | R2 | RMSE | Median Absolute Error |
