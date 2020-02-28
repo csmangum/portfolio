@@ -18,7 +18,7 @@ The purpose of this project is to predict listing price based on several possibl
 * Converted all the columns to appropriate data type
 * Changed T/F columns to binary
 * Cleaned the currency related fields, zipcodes, and percentage columns
-* Removed listings with $600 or more daily price. Around 95% of listings are below this amount
+* Removed listings with $500 or more daily price. Around 95% of listings are below this amount
 ***
 
 ## Data Exploration
@@ -70,7 +70,7 @@ The purpose of this project is to predict listing price based on several possibl
 | Linear Regression | .741 | $52.00 | 19.7 |
 | Random Forest | .742 | $49.10 | 20.1 |
 | Gradient Boosted | .812 | $42.90 | 16.8 |
-| Light GBM | **.852** | **$38.20** | **15.0** |
+| Light GBM | .852 | $38.20 | 15.0 |
 
 
 ### Best Performing Model
