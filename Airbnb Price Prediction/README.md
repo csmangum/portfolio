@@ -88,6 +88,22 @@ The purpose of this project is to predict listing price based on several possibl
 
 ## Natural Language Processing
 
+### With NLP & Feature Selection (Step Forward)
+
+| Model | R2 | RMSE | Median Absolute Error |
+| :---: | :---: | :---: | :---: |
+| Linear Regression | .731 | $52.90 | 20.1 |
+| Random Forest | .739 | $49.30 | 20.2 |
+| Gradient Boosted | .812 | $43.00 | 16.7 |
+| Light GBM | .854 | $37.90 | 14.7 |
+
+
+| Model | R2 | RMSE | Median Absolute Error |
+| :---: | :---: | :---: | :---: |
+| Gradient Boosted | .807 | $44.31 | ? |
+| Light GBM | .809 | $44.03 | 15.9 |
+
+
 ## Conclusion
 
 ## Notebooks
