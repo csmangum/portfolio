@@ -56,12 +56,22 @@ The purpose of this project is to predict listing price based on several possibl
 ***
 
 ## Initial Model Development
-
+### With Feature Selection (Step Forward)
 | Model | R2 | RMSE | Median Absolute Error |
 | :---: | :---: | :---: | :---: |
-| Linear Regression | 0 | 0 | 0 |
-| Random Forest | 0 | 0 | 0 |
-| Light GBM | 0 | 0 | 0 |
+| Linear Regression | .741 | $52.00 | 19.7 |
+| Random Forest | .742 | $49.10 | 20.1 |
+| Gradient Boosted | .812 | $42.90 | 16.8 |
+| Light GBM | .852 | $38.20 | 15.0 |
+
+### With All Features
+| Model | R2 | RMSE | Median Absolute Error |
+| :---: | :---: | :---: | :---: |
+| Linear Regression | .741 | $52.00 | 19.7 |
+| Random Forest | .742 | $49.10 | 20.1 |
+| Gradient Boosted | .812 | $42.90 | 16.8 |
+| Light GBM | .852 | $38.20 | 15.0 |
+
 
 ### Best Performing Model
 ![](initial_model.png)
