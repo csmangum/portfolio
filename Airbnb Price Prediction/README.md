@@ -80,9 +80,8 @@ The purpose of this project is to predict listing price based on several possibl
 
 | Model | R2 | RMSE | Median Absolute Error |
 | :---: | :---: | :---: | :---: |
-| Linear Regression | 0 | 0 | 0 |
-| Random Forest | 0 | 0 | 0 |
-| Light GBM | 0 | 0 | 0 |
+| Gradient Boosted | .807 | $44.31 | ? |
+| Light GBM | .809 | $44.03 | 15.9 |
 
 ### Optimized Model
 ![](final_model.png)
