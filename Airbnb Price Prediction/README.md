@@ -57,20 +57,20 @@ The purpose of this project is to predict listing price based on several possibl
 
 ## Initial Model Development
 ### Feature Selection (Step Forward)
-| Model | R2 | RMSE | Median Absolute Error |
-| :---: | :---: | :---: | :---: |
-| Linear Regression | .741 | $52.00 | 19.7 |
-| Random Forest | .742 | $49.10 | 20.1 |
-| Gradient Boosted | .812 | $42.90 | 16.8 |
-| Light GBM | .852 | $38.20 | 15.0 |
+| Model | R2 | RMSE | Median Absolute Error | Runtime |
+| :---: | :---: | :---: | :---: | :---: |
+| Linear Regression | .741 | $52.00 | 19.7 | 0 |
+| Random Forest | .742 | $49.10 | 20.1 | 0 |
+| Gradient Boosted | .812 | $42.90 | 16.8 | 0 |
+| Light GBM | .852 | $38.20 | 15.0 | 0 |
 
 ### All Features
-| Model | R2 | RMSE | Median Absolute Error |
-| :---: | :---: | :---: | :---: |
-| Linear Regression | .780 | $47.60 | 17.7 |
-| Random Forest | .744 | $48.80 | 20.0 |
-| Gradient Boosted | .823 | $41.90 | 16.1 |
-| Light GBM | .876 | $35.20 | 13.4 |
+| Model | R2 | RMSE | Median Absolute Error | Runtime |
+| :---: | :---: | :---: | :---: | :---: |
+| Linear Regression | .780 | $47.60 | 17.7 | 0 |
+| Random Forest | .744 | $48.80 | 20.0 | 0 |
+| Gradient Boosted | .823 | $41.90 | 16.1 | 0 |
+| Light GBM | .876 | $35.20 | 13.4 | 0 |
 
 
 ### Best Performing Model
@@ -79,16 +79,16 @@ The purpose of this project is to predict listing price based on several possibl
 ## Final Model Development
 
 ### Feature Selection (Step Forward)
-| Model | R2 | RMSE | Median Absolute Error |
-| :---: | :---: | :---: | :---: |
-| Gradient Boosted | .807 | $44.31 | 17.1 |
-| Light GBM | .809 | $44.03 | 15.9 |
+| Model | R2 | RMSE | Median Absolute Error | Runtime |
+| :---: | :---: | :---: | :---: | :---: |
+| Gradient Boosted | .807 | $44.31 | 17.1 | 0 |
+| Light GBM | .809 | $44.03 | 15.9 | 0 |
 
 ### All Features
-| Model | R2 | RMSE | Median Absolute Error |
-| :---: | :---: | :---: | :---: |
-| Gradient Boosted | .819 | $43.02 | 16.8 |
-| Light GBM | .825 | $42.15 | 15.2 |
+| Model | R2 | RMSE | Median Absolute Error | Runtime |
+| :---: | :---: | :---: | :---: | :---: |
+| Gradient Boosted | .819 | $43.02 | 16.8 | 0 |
+| Light GBM | .825 | $42.15 | 15.2 | 0 |
 
 ### Optimized Model
 ![](final_model.png)
@@ -96,32 +96,32 @@ The purpose of this project is to predict listing price based on several possibl
 ## Natural Language Processing
 
 ### With NLP & Feature Selection (Step Forward)
-| Model | R2 | RMSE | Median Absolute Error |
-| :---: | :---: | :---: | :---: |
-| Linear Regression | .731 | $52.90 | 20.1 |
-| Random Forest | .739 | $49.30 | 20.2 |
-| Gradient Boosted | .812 | $43.00 | 16.7 |
-| Light GBM | .854 | $37.90 | 14.7 |
+| Model | R2 | RMSE | Median Absolute Error | Runtime |
+| :---: | :---: | :---: | :---: | :---: |
+| Linear Regression | .731 | $52.90 | 20.1 | 0 |
+| Random Forest | .739 | $49.30 | 20.2 | 0 |
+| Gradient Boosted | .812 | $43.00 | 16.7 | 0 |
+| Light GBM | .854 | $37.90 | 14.7 | 0 |
 
 ### Optimized
-| Model | R2 | RMSE | Median Absolute Error |
-| :---: | :---: | :---: | :---: |
-| Gradient Boosted | .807 | $44.02 | 15.9 |
-| Light GBM | .809 | $43.67 | 15.7 |
+| Model | R2 | RMSE | Median Absolute Error | Runtime |
+| :---: | :---: | :---: | :---: | :---: |
+| Gradient Boosted | .807 | $44.02 | 15.9 | 0 |
+| Light GBM | .809 | $43.67 | 15.7 | 0 |
 
 ### With NLP & All Features
-| Model | R2 | RMSE | Median Absolute Error |
-| :---: | :---: | :---: | :---: |
-| Linear Regression | .783 | $47.40 | 17.4 |
-| Random Forest | .744 | $48.80 | 20.0 |
-| Gradient Boosted | .824 | $41.70 | 16.0 |
-| Light GBM | .877 | $35.00 | 13.3 |
+| Model | R2 | RMSE | Median Absolute Error | Runtime |
+| :---: | :---: | :---: | :---: | :---: |
+| Linear Regression | .783 | $47.40 | 17.4 | 5.7 sec |
+| Random Forest | .744 | $48.80 | 20.0 | 50.6 sec |
+| Gradient Boosted | .824 | $41.70 | 16.0 | 105 sec |
+| Light GBM | .877 | $35.00 | 13.3 | 26.8 sec |
 
 ### Optimized
-| Model | R2 | RMSE | Median Absolute Error |
-| :---: | :---: | :---: | :---: |
-| Gradient Boosted | .807 | $44.02 | 15.9 |
-| Light GBM | .809 | $43.67 | 15.7 |
+| Model | R2 | RMSE | Median Absolute Error | Runtime |
+| :---: | :---: | :---: | :---: | :---: |
+| Gradient Boosted | .807 | $44.02 | 15.9 | 0 |
+| Light GBM | .809 | $43.67 | 15.7 | 0 |
 
 
 ## Conclusion
