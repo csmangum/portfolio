@@ -112,16 +112,16 @@ The purpose of this project is to predict listing price based on several possibl
 ### With NLP & All Features
 | Model | R2 | RMSE | Median Absolute Error | Runtime (seconds) |
 | :---: | :---: | :---: | :---: | :---: |
-| Linear Regression | .783 | $47.40 | 17.4 | 5.7 |
-| Random Forest | .744 | $48.80 | 20.0 | 50.6 |
-| Gradient Boosted | .824 | $41.70 | 16.0 | 105 |
-| Light GBM | .877 | $35.00 | 13.3 | 26.8 |
+| Linear Regression | .783 | $47.40 | 17.4 | 7 |
+| Random Forest | .744 | $48.80 | 20.0 | 52 |
+| Gradient Boosted | .824 | $41.70 | 16.0 | 109 |
+| Light GBM | .877 | $35.00 | 13.3 | 24 |
 
 ### Optimized
-| Model | R2 | RMSE | Median Absolute Error | Runtime |
+| Model | R2 | RMSE | Median Absolute Error | Runtime (minutes) |
 | :---: | :---: | :---: | :---: | :---: |
-| Gradient Boosted | .807 | $44.02 | 15.9 | 0 |
-| Light GBM | .809 | $43.67 | 15.7 | 0 |
+| Gradient Boosted | .823 | $42.33 | 15.0 | 288 |
+| Light GBM | .827 | $41.87 | 14.8 | 14 |
 
 
 ## Conclusion
