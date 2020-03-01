@@ -1,8 +1,7 @@
 ## Primary Portfolio Project: 
 [<img src="https://github.com/csmangum/portfolio/blob/master/img/airbnb_portfolio_title.png" width="900">](https://github.com/csmangum/portfolio/tree/master/Airbnb%20Price%20Prediction) 
 [<img src="https://github.com/csmangum/portfolio/blob/master/img/quad_v2.gif">](https://github.com/csmangum/portfolio/tree/master/Airbnb%20Price%20Prediction)
-[<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/airbnb_featuring.png" width="900">]
-(https://github.com/csmangum/portfolio/tree/master/Airbnb%20Price%20Prediction)
+[<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/airbnb_featuring.png" width="900">](https://github.com/csmangum/portfolio/tree/master/Airbnb%20Price%20Prediction)
 
 ## Secondary Portfolio Projects: 
   - [California Housing Market](https://github.com/csmangum/portfolio/blob/master/Projects/Home_Value_Prediction/California_Housing_Market.ipynb): 
