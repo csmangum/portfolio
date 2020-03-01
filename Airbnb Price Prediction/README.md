@@ -9,7 +9,7 @@ The purpose of this project is to predict listing price based on several possibl
 ## 1. Initial Cleaning
 
 ### Findings
-The data quality is pretty gppd but there are some issues since the listings were scraped from the Airbnb website. This first step includes some simple cleaning of data types and strings, followed by joining external data sources to provide further context for the algorithms. Many columns have missing data and four columns have more than 90% of values missing.
+The data quality is pretty good but there are some issues since the listings were scraped from the Airbnb website. This first step includes some simple cleaning of data types and strings, followed by joining external data sources to provide further context for the algorithms. Many columns have missing data and four columns have more than 90% of values missing.
 
 ### Actions
 * I will removed these columns that have more than 90% of values missing. Other columns with missing data will be handled later with imputation
@@ -58,11 +58,11 @@ The data quality is pretty gppd but there are some issues since the listings wer
 
 ## Initial Model Development
 ### Feature Selection (Step Forward)
-| Model | R2 | RMSE | Median Absolute Error | Runtime |
+| Model | R2 | RMSE | Median Absolute Error | Runtime (seconds) |
 | :---: | :---: | :---: | :---: | :---: |
-| Linear Regression | .741 | $52.00 | 19.7 | 0 |
-| Random Forest | .742 | $49.10 | 20.1 | 0 |
-| Gradient Boosted | .812 | $42.90 | 16.8 | 0 |
+| Linear Regression | .741 | $52.00 | 19.7 | 2.2 |
+| Random Forest | .742 | $49.10 | 20.1 | 27.6 |
+| Gradient Boosted | .812 | $42.90 | 16.8 | 9.89 |
 | Light GBM | .852 | $38.20 | 15.0 | 0 |
 
 ### All Features
