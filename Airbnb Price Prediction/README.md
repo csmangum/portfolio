@@ -6,11 +6,10 @@ The purpose of this project is to predict listing price based on several possibl
 <img src="https://github.com/csmangum/portfolio/blob/master/img/quad_v2.gif">
 
 ***
-## Initial Cleaning
+## 1. Initial Cleaning
 
 ### Findings
-* Many columns have missing data and four columns have more than 90% of values missing
-* Four other columns had only one unique values
+The data quality is pretty gppd but there are some issues since the listings were scraped from the Airbnb website. This first step includes some simple cleaning of data types and strings, followed by joining external data sources to provide further context for the algorithms. Many columns have missing data and four columns have more than 90% of values missing.
 
 ### Actions
 * I will removed these columns that have more than 90% of values missing. Other columns with missing data will be handled later with imputation
@@ -19,6 +18,8 @@ The purpose of this project is to predict listing price based on several possibl
 * Changed T/F columns to binary
 * Cleaned the currency related fields, zipcodes, and percentage columns
 * Removed listings with $500 or more daily price. Around 95% of listings are below this amount
+* Added topic models from NLP work on the listing description
+* Added zip code based metrics for income and population
 ***
 
 ## Data Exploration
