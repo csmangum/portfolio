@@ -36,8 +36,6 @@ The data quality is pretty good but there are some issues since the listings wer
 * A few features are highly correlated with each other
 * The target variable is skewed and will need to be log transformed 
 
-<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/response_time.png" width="500">
-
 ***Top 10 Correlations with daily price***  
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/top_10_correlations.png" width="900">
 
