@@ -4,7 +4,7 @@
 
 The purpose of this project is to predict listing price based on several possible features available from data collected through [Inside Airbnb](http://insideairbnb.com/get-the-data.html). This high-level overview will showcase my work with the data while there will be links to the specific notebooks with all the work completed to achieve project results.
 ***
-## 1. Initial Cleaning
+## 1. Initial Cleaning & Processing
 
 ### Findings
 The data quality is pretty good but there are some issues since the listings were scraped from the Airbnb website. This first step includes some simple cleaning of data types and strings, followed by joining external data sources to provide further context for the algorithms. Many columns have missing data and four columns have more than 90% of values missing.
@@ -18,9 +18,10 @@ The data quality is pretty good but there are some issues since the listings wer
 * Removed listings with $500 or more daily price. Around 95% of listings are below this amount
 * Added topic models from NLP work on the listing description
 * Added zip code based metrics for income and population
+
 ***
 
-## Data Exploration
+## 2. Data Exploration
 ***Distribution of daily pricing before transformation***  
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/original_price.png" width="500">
 
@@ -36,6 +37,9 @@ The data quality is pretty good but there are some issues since the listings wer
 * A few features are highly correlated with each other
 * The target variable is skewed and will need to be log transformed 
 
+***
+
+## 3. Feature Engineering
 ***Top 10 Correlations with daily price***  
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/top_10_correlations.png" width="900">
 
@@ -44,7 +48,9 @@ The data quality is pretty good but there are some issues since the listings wer
 ***Distribution of daily pricing after transformation***  
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/transformed_price.png" width="500">
 
-## Feature Selection
+***
+
+## 4. Feature Selection
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/featue_importance.png" width="800">
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/cum_importance.png" width="600">
 
@@ -65,7 +71,7 @@ The data quality is pretty good but there are some issues since the listings wer
 
 ***
 
-## Initial Model Development
+## 6. Initial Model Development
 ### Feature Selection (Step Forward)
 | Model | R2 | RMSE | Median Absolute Error | Runtime (seconds) |
 | :---: | :---: | :---: | :---: | :---: |
@@ -86,7 +92,9 @@ The data quality is pretty good but there are some issues since the listings wer
 ### Best Performing Model
 ![](initial_model.png)
 
-## Final Model Development
+***
+
+## 7. Optimization
 
 ### Feature Selection (Step Forward)
 | Model | R2 | RMSE | Median Absolute Error | Runtime (minutes) |
@@ -103,7 +111,9 @@ The data quality is pretty good but there are some issues since the listings wer
 ### Optimized Model
 ![](final_model.png)
 
-## Natural Language Processing
+***
+
+## 8. Natural Language Processing - Topic Modeling
 
 ### With NLP & Feature Selection (Step Forward)
 | Model | R2 | RMSE | Median Absolute Error | Runtime (seconds)  |
