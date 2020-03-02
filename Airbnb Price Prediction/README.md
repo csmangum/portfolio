@@ -75,12 +75,12 @@ The data quality is pretty good but there are some issues since the listings wer
 | Light GBM | .852 | $38.20 | 15.0 | 0 |
 
 ### All Features
-| Model | R2 | RMSE | Median Absolute Error | Runtime |
+| Model | R2 | RMSE | Median Absolute Error | Runtime (seconds) |
 | :---: | :---: | :---: | :---: | :---: |
-| Linear Regression | .780 | $47.60 | 17.7 | 0 |
-| Random Forest | .744 | $48.80 | 20.0 | 0 |
-| Gradient Boosted | .823 | $41.90 | 16.1 | 0 |
-| Light GBM | .876 | $35.20 | 13.4 | 0 |
+| Linear Regression | .780 | $47.60 | 17.7 | 8.21 |
+| Random Forest | .744 | $48.80 | 20.0 | 64.5 |
+| Gradient Boosted | .823 | $41.90 | 16.1 | 121.0 |
+| Light GBM | .876 | $35.20 | 13.4 | 36.0 |
 
 
 ### Best Performing Model
@@ -89,16 +89,16 @@ The data quality is pretty good but there are some issues since the listings wer
 ## Final Model Development
 
 ### Feature Selection (Step Forward)
-| Model | R2 | RMSE | Median Absolute Error | Runtime |
+| Model | R2 | RMSE | Median Absolute Error | Runtime (minutes) |
 | :---: | :---: | :---: | :---: | :---: |
-| Gradient Boosted | .807 | $44.31 | 17.1 | 0 |
-| Light GBM | .809 | $44.03 | 15.9 | 0 |
+| Gradient Boosted | .807 | $44.31 | 17.1 | 72.1 |
+| Light GBM | .809 | $44.03 | 15.9 | 5.5 |
 
 ### All Features
-| Model | R2 | RMSE | Median Absolute Error | Runtime |
+| Model | R2 | RMSE | Median Absolute Error | Runtime (minutes) |
 | :---: | :---: | :---: | :---: | :---: |
-| Gradient Boosted | .819 | $43.02 | 16.8 | 0 |
-| Light GBM | .825 | $42.15 | 15.2 | 0 |
+| Gradient Boosted | .819 | $43.02 | 16.8 | 254.0 |
+| Light GBM | .825 | $42.15 | 15.2 | 13.2 |
 
 ### Optimized Model
 ![](final_model.png)
@@ -106,32 +106,32 @@ The data quality is pretty good but there are some issues since the listings wer
 ## Natural Language Processing
 
 ### With NLP & Feature Selection (Step Forward)
-| Model | R2 | RMSE | Median Absolute Error | Runtime |
+| Model | R2 | RMSE | Median Absolute Error | Runtime (seconds)  |
 | :---: | :---: | :---: | :---: | :---: |
-| Linear Regression | .731 | $52.90 | 20.1 | 0 |
-| Random Forest | .739 | $49.30 | 20.2 | 0 |
-| Gradient Boosted | .812 | $43.00 | 16.7 | 0 |
-| Light GBM | .854 | $37.90 | 14.7 | 0 |
-
-### Optimized
-| Model | R2 | RMSE | Median Absolute Error | Runtime |
-| :---: | :---: | :---: | :---: | :---: |
-| Gradient Boosted | .807 | $44.02 | 15.9 | 0 |
-| Light GBM | .809 | $43.67 | 15.7 | 0 |
-
-### With NLP & All Features
-| Model | R2 | RMSE | Median Absolute Error | Runtime (seconds) |
-| :---: | :---: | :---: | :---: | :---: |
-| Linear Regression | .783 | $47.40 | 17.4 | 7 |
-| Random Forest | .744 | $48.80 | 20.0 | 52 |
-| Gradient Boosted | .824 | $41.70 | 16.0 | 109 |
-| Light GBM | .877 | $35.00 | 13.3 | 24 |
+| Linear Regression | .731 | $52.90 | 20.1 | 2.2 |
+| Random Forest | .739 | $49.30 | 20.2 | 27.6 |
+| Gradient Boosted | .812 | $43.00 | 16.7 | 23.2 |
+| Light GBM | .854 | $37.90 | 14.7 | 8.9 |
 
 ### Optimized
 | Model | R2 | RMSE | Median Absolute Error | Runtime (minutes) |
 | :---: | :---: | :---: | :---: | :---: |
-| Gradient Boosted | .823 | $42.33 | 15.0 | 288 |
-| Light GBM | .827 | $41.87 | 14.8 | 14 |
+| Gradient Boosted | .807 | $44.02 | 15.9 | 72.9 |
+| Light GBM | .809 | $43.67 | 15.7 | 5.9 |
+
+### With NLP & All Features
+| Model | R2 | RMSE | Median Absolute Error | Runtime (seconds) |
+| :---: | :---: | :---: | :---: | :---: |
+| Linear Regression | .783 | $47.40 | 17.4 | 7.2 |
+| Random Forest | .744 | $48.80 | 20.0 | 52.4 |
+| Gradient Boosted | .824 | $41.70 | 16.0 | 109.0 |
+| Light GBM | .877 | $35.00 | 13.3 | 24.4 |
+
+### Optimized
+| Model | R2 | RMSE | Median Absolute Error | Runtime (minutes) |
+| :---: | :---: | :---: | :---: | :---: |
+| Gradient Boosted | .823 | $42.33 | 15.0 | 288.8 |
+| Light GBM | .827 | $41.87 | 14.8 | 13.5 |
 
 
 ## Conclusion
