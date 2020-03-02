@@ -78,7 +78,7 @@ The data quality is pretty good but there are some issues since the listings wer
 | Linear Regression | .741 | $52.00 | 19.7 | 2.2 |
 | Random Forest | .742 | $49.10 | 20.1 | 27.6 |
 | Gradient Boosted | .812 | $42.90 | 16.8 | 9.89 |
-| Light GBM | .852 | $38.20 | 15.0 | 0 |
+| Light GBM | .852 | $38.20 | 15.0 | 9.13 |
 
 ### All Features
 | Model | R2 | RMSE | Median Absolute Error | Runtime (seconds) |
@@ -144,7 +144,7 @@ The data quality is pretty good but there are some issues since the listings wer
 | Light GBM | .827 | $41.87 | 14.8 | 13.5 |
 
 
-## Conclusion
+## 9. Conclusion
 
 ## Notebooks
 1. [Initial Cleaning](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/1.%20Initial%20Cleaning.ipynb)
