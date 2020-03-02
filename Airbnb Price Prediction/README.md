@@ -43,7 +43,8 @@ The data quality is pretty good but there are some issues since the listings wer
 
 ***
 
-<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/transformed_price.png" width="900">
+***Distribution of daily pricing after transformation***  
+<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/transformed_price.png" width="500">
 
 ## Feature Selection
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/featue_importance.png" width="800">
