@@ -24,7 +24,7 @@ The data quality is pretty good but there are some issues since the listings wer
 ***Distribution of daily pricing before transformation***  
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/original_price.png" width="500">
 
-***Heatmap of listings across Los Angeles area  ***
+***Heatmap of listings across Los Angeles area***  
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/heatmap.png" width="900">
 
 
@@ -38,7 +38,7 @@ The data quality is pretty good but there are some issues since the listings wer
 
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/response_time.png" width="500">
 
-***Top 10 Correlations with daily price  ***
+***Top 10 Correlations with daily price***  
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/top_10_correlations.png" width="900">
 
 ***
