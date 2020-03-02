@@ -21,7 +21,7 @@ The data quality is pretty good but there are some issues since the listings wer
 ***
 
 ## Data Exploration
-<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/response_time.png" width="400"><img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/original_price.png" width="400">
+<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/original_price.png" width="500">
 
 ### Findings
 * Most hosts respond within an hour
@@ -31,6 +31,7 @@ The data quality is pretty good but there are some issues since the listings wer
 * A few features are highly correlated with each other
 * The target variable is skewed and will need to be log transformed 
 
+<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/response_time.png" width="500">
 
 ***
 
