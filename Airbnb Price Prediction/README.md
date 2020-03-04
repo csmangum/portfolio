@@ -148,7 +148,7 @@ I used scikit learn's gridsearchcv algorithm to optimize a set of parameters for
 
 ## 9. Conclusion
 
-|              | Header 1        | Header 2                       || Header 3                       ||
+||             || Header 1       || Header 2                       || Header 3                       ||
 |              | Subheader 1     | Subheader 2.1  | Subheader 2.2  | Subheader 3.1  | Subheader 3.2  |
 |==============|-----------------|----------------|----------------|----------------|----------------|
 | Row Header 1 | 3row, 3col span                                 ||| Colspan only                   ||
@@ -158,7 +158,6 @@ I used scikit learn's gridsearchcv algorithm to optimize a set of parameters for
 :              :  with multiple  :  has room for  :   multi-line   :    multi-line  :  multi-line    :
 :              :  lines.         :  more text.    :      text.     :         text.  :  text.         :
 |--------------|-----------------|----------------|----------------|----------------|----------------|
-[Caption Text]
 
 ## Notebooks
 1. [Initial Cleaning](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/1.%20Initial%20Cleaning.ipynb)
