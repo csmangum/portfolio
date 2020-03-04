@@ -147,8 +147,6 @@ I used scikit learn's gridsearchcv algorithm to optimize a set of parameters for
 
 ## 9. Conclusion
 
-<div class="text-purple">This text is purple, <a href="#" class="text-inherit">including the link</a></div>
-
 
 ## Notebooks
 1. [Initial Cleaning](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/1.%20Initial%20Cleaning.ipynb)
