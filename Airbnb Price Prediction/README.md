@@ -147,9 +147,7 @@ I used scikit learn's gridsearchcv algorithm to optimize a set of parameters for
 
 ## 9. Conclusion
 
-<div class="text-blue mb-2">
-  .text-blue on white
-</div>
+<div class="text-purple">This text is purple, <a href="#" class="text-inherit">including the link</a></div>
 
 
 ## Notebooks
