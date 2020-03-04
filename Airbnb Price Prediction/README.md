@@ -12,18 +12,27 @@ The data quality is pretty good but there are some issues since the listings wer
 This first step includes some simple cleaning of data types and strings, followed by joining external data sources to provide further context for the algorithms. Many columns have missing data and four columns have more than 90% of values missing.
 
 ### Actions
-* I will removed these columns that have more than 90% of values missing. Other columns with missing data will be handled later with imputation
+* I removed columns that have more than 90% of values missing. Other columns with missing data will be handled later with imputation
 * I removed columns 'experiences_offered', 'country_code', 'country', 'has_availability' due to having only one unique value
 * Converted all the columns to appropriate data type
 * Changed T/F columns to binary
 * Cleaned the currency related fields, zipcodes, and percentage columns
 * Removed listings with $500 or more daily price. Around 95% of listings are below this amount
 * Added topic models from NLP work on the listing description
-* Added zip code based metrics for income and population
+* Added zip code-based metrics for income and population
 
 ***
 
 ## 2. Data Exploration
+### Findings
+* Most hosts respond within an hour
+* Most hosts are neither verified or superhosts
+* Bed type, requires license, and host has a profile pic are not a useful field
+* There are a handful of features that are correlated with price
+* A few features are highly correlated with each other
+* The target variable is skewed and will need to be log transformed 
+
+
 ***Distribution of daily pricing before transformation***  
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/original_price.png" width="500">
 
@@ -33,25 +42,17 @@ This first step includes some simple cleaning of data types and strings, followe
 ***Top 10 Correlations with daily price***  
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/top_10_correlations.png" width="900">ing
 
-### Findings
-* Most hosts respond within an hour
-* Most hosts are neither verified or superhosts
-* Bed type, requires license, and host has a profile pic are not a useful field
-* There are a handful of features that are correlated with price
-* A few features are highly correlated with each other
-* The target variable is skewed and will need to be log transformed 
-
 ***
 
 ## 3. Feature Engineer
 ### Actions
-* From the security deposit field, I create a boolian feature if there is/ or is not a security deposit required
-* With property type, 'Apartment', 'House', 'Condominium','Townhouse', 'Loft', and 'Guesthouse' are the most frequent. I converted all other to a misc category named 'Other'
-* From the ammenities column I used simple text mining to identify boolean columns of specific ammenities
+* From the security deposit field, I create a boolean feature if there is/ or is not a security deposit required
+* With property type, 'Apartment', 'House', 'Condominium', 'Townhouse', 'Loft', and 'Guesthouse' are the most frequent. I converted all other to a misc category named 'Other'
+* From the amenities column I used simple text mining to identify boolean columns of specific amenities
 * Created dummy variables for categorical features
 * Imputed missing values with median values
 * Log transformed target variable
-* Created a clustering feature based on a few variables using kmeans clustering
+* Created a clustering feature based on a few variables using k-means clustering
 
 ***Distribution of daily pricing after transformation***  
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/transformed_price.png" width="500">
@@ -60,7 +61,7 @@ This first step includes some simple cleaning of data types and strings, followe
 
 ## 4. Feature Selection
 
-With this section I wanted to see thebenfit of feature selection on model performance and runtime. I used a Step-forward feature selection algorithm from the mlxtend library. In most cases, 15 features made up 95% of feature importance and I kept that number of features through the algorithm. In the end, feature selection had little impact on model performance or runtime for my needs.
+With this section I wanted to see the benefit of feature selection on model performance and runtime. I used a Step-forward feature selection algorithm from the mlxtend library. In most cases, 15 features made up 95% of feature importance and I kept that number of features through the algorithm. In the end, feature selection had little impact on model performance or runtime for my needs.
 
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/featue_importance.png" width="800">
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/cum_importance.png" width="600">
@@ -69,7 +70,7 @@ With this section I wanted to see thebenfit of feature selection on model perfor
 
 ## 6. Initial Model Development
 
-I went forward with four algorithms: Linear Regression, Random Forests, Gradient Boosted Regression, and LightGBM from Microsoft. Model performance was similar but the tree based model performed better, especially the LightGBM model in both metrics and runtime. Next I will optimize both of the gradient boosted models and see how they compare.
+I went forward with four algorithms: Linear Regression, Random Forests, Gradient Boosted Regression, and LightGBM from Microsoft. Model performance was similar, but the tree-based model performed better, especially the LightGBM model in both metrics and runtime. Next, I will optimize both gradient boosted models and see how they compare.
 
 ### Feature Selection (Step Forward)
 | Model | R2 | RMSE | Median Absolute Error | Runtime (seconds) |
