@@ -148,8 +148,6 @@ I used scikit learn's gridsearchcv algorithm to optimize a set of parameters for
 ## 9. Conclusion
 
 
-- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
-
 
 ## Notebooks
 1. [Initial Cleaning](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/1.%20Initial%20Cleaning.ipynb)
