@@ -148,12 +148,6 @@ I used scikit learn's gridsearchcv algorithm to optimize a set of parameters for
 
 ## 9. Conclusion
 
-|| Model | R2 | RMSE || Median Absolute Error | Runtime (minutes) ||
-| Test header | Testheader2 |
-| :---: | :---: | :---: | :---: | :---: |
-| Gradient Boosted | .823 | $42.33 | 15.0 | 288.8 |
-| Light GBM | .827 | $41.87 | 14.8 | 13.5 |
-
 ## Notebooks
 1. [Initial Cleaning](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/1.%20Initial%20Cleaning.ipynb)
 2. [Data Exploration](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/2.%20Data%20Exploration.ipynb)
