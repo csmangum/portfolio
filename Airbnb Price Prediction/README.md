@@ -147,6 +147,9 @@ I used scikit learn's gridsearchcv algorithm to optimize a set of parameters for
 
 ## 9. Conclusion
 
+<div class="text-blue mb-2">
+  .text-blue on white
+</div>
 
 
 ## Notebooks
