@@ -148,7 +148,7 @@ I used scikit learn's gridsearchcv algorithm to optimize a set of parameters for
 
 ## 9. Conclusion
 
-| Model | R2 | RMSE || Median Absolute Error | Runtime (minutes) |
+|| Model | R2 | RMSE || Median Absolute Error | Runtime (minutes) ||
 | Test header | Testheader2 |
 | :---: | :---: | :---: | :---: | :---: |
 | Gradient Boosted | .823 | $42.33 | 15.0 | 288.8 |
