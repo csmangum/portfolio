@@ -7,9 +7,7 @@ The purpose of this project is to predict listing price based on several possibl
 ## 1. Initial Cleaning & Processing
 
 ### Findings
-The data quality is pretty good but there are some issues since the listings were scraped from the Airbnb website. There are 31,253 rows and more than 40 columns. Four my use, I will only import 41 of them since many other are not useful for modeling.
-
-This first step includes some simple cleaning of data types and strings, followed by joining external data sources to provide further context for the algorithms. Many columns have missing data and four columns have more than 90% of values missing.
+The data quality is pretty good but there are some issues since the listings were scraped from the Airbnb website. There are 31,253 rows and more than 40 columns. For my use, I will only import 41 of them since many other are not useful for modeling. This first step includes some simple cleaning of data types and strings, followed by joining external data sources to provide further context for the algorithms. Many columns have missing data and four columns have more than 90% of values missing.
 
 ### Actions
 * I removed columns that have more than 90% of values missing. Other columns with missing data will be handled later with imputation
@@ -24,6 +22,8 @@ This first step includes some simple cleaning of data types and strings, followe
 ***
 
 ## 2. Data Exploration
+I will look to predict daily listing price in the Los Angeles area. There are over 20,000 listings in the area with an average price around $126 a daily. Interestingly, the lowest daily price is $10 and the maximum all the way up to $10,000.
+
 ### Findings
 * Most hosts respond within an hour
 * Most hosts are neither verified or superhosts
