@@ -72,6 +72,8 @@ With this section I wanted to see the benefit of feature selection on model perf
 
 I went forward with four algorithms: Linear Regression, Random Forests, Gradient Boosted Regression, and LightGBM from Microsoft. Model performance was similar, but the tree-based model performed better, especially the LightGBM model in both metrics and runtime. Next, I will optimize both gradient boosted models and see how they compare.
 
+<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/main_results.png" width="500">
+
 ### Feature Selection (Step Forward)
 | Model | R2 | RMSE | Median Absolute Error | Runtime (seconds) |
 | :---: | :---: | :---: | :---: | :---: |
