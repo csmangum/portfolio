@@ -74,22 +74,6 @@ I went forward with four algorithms: Linear Regression, Random Forests, Gradient
 
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/main_results.png" width="800">
 
-### Feature Selection (Step Forward)
-| Model | R2 | RMSE | Median Absolute Error | Runtime (seconds) |
-| :---: | :---: | :---: | :---: | :---: |
-| Linear Regression | .741 | $52.00 | 19.7 | 2.2 |
-| Random Forest | .742 | $49.10 | 20.1 | 27.6 |
-| Gradient Boosted | .812 | $42.90 | 16.8 | 9.89 |
-| Light GBM | .852 | $38.20 | 15.0 | 9.13 |
-
-### All Features
-| Model | R2 | RMSE | Median Absolute Error | Runtime (seconds) |
-| :---: | :---: | :---: | :---: | :---: |
-| Linear Regression | .780 | $47.60 | 17.7 | 8.21 |
-| Random Forest | .744 | $48.80 | 20.0 | 64.5 |
-| Gradient Boosted | .823 | $41.90 | 16.1 | 121.0 |
-| Light GBM | .876 | $35.20 | 13.4 | 36.0 |
-
 
 ### Best Performing Model
 ![](initial_model.png)
@@ -100,17 +84,7 @@ I went forward with four algorithms: Linear Regression, Random Forests, Gradient
 
 I used scikit learn's gridsearchcv algorithm to optimize a set of parameters for each model. This did result in high runtimes but nothing impractical. I wanted to get a good sense of performance without risking significant overfitting. Again, the LightGBM model performed better and was optimized in significantly less time. However, the model scored on the training set overfit much more based on the difference when scored on the test data.
 
-### Feature Selection (Step Forward)
-| Model | R2 | RMSE | Median Absolute Error | Runtime (minutes) |
-| :---: | :---: | :---: | :---: | :---: |
-| Gradient Boosted | .807 | $44.31 | 17.1 | 72.1 |
-| Light GBM | .809 | $44.03 | 15.9 | 5.5 |
-
-### All Features
-| Model | R2 | RMSE | Median Absolute Error | Runtime (minutes) |
-| :---: | :---: | :---: | :---: | :---: |
-| Gradient Boosted | .819 | $43.02 | 16.8 | 254.0 |
-| Light GBM | .825 | $42.15 | 15.2 | 13.2 |
+<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/main_optimized_results.png" width="800">
 
 ### Optimized Model
 ![](final_model.png)
@@ -119,34 +93,11 @@ I used scikit learn's gridsearchcv algorithm to optimize a set of parameters for
 
 ## 8. Natural Language Processing - Topic Modeling
 
-### With NLP & Feature Selection (Step Forward)
-| Model | R2 | RMSE | Median Absolute Error | Runtime (seconds)  |
-| :---: | :---: | :---: | :---: | :---: |
-| Linear Regression | .731 | $52.90 | 20.1 | 2.2 |
-| Random Forest | .739 | $49.30 | 20.2 | 27.6 |
-| Gradient Boosted | .812 | $43.00 | 16.7 | 23.2 |
-| Light GBM | .854 | $37.90 | 14.7 | 8.9 |
+<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/nlp_results.png" width="800">
+
 
 ### Optimized
-| Model | R2 | RMSE | Median Absolute Error | Runtime (minutes) |
-| :---: | :---: | :---: | :---: | :---: |
-| Gradient Boosted | .807 | $44.02 | 15.9 | 72.9 |
-| Light GBM | .809 | $43.67 | 15.7 | 5.9 |
-
-### With NLP & All Features
-| Model | R2 | RMSE | Median Absolute Error | Runtime (seconds) |
-| :---: | :---: | :---: | :---: | :---: |
-| Linear Regression | .783 | $47.40 | 17.4 | 7.2 |
-| Random Forest | .744 | $48.80 | 20.0 | 52.4 |
-| Gradient Boosted | .824 | $41.70 | 16.0 | 109.0 |
-| Light GBM | .877 | $35.00 | 13.3 | 24.4 |
-
-### Optimized
-| Model | R2 | RMSE | Median Absolute Error | Runtime (minutes) |
-| :---: | :---: | :---: | :---: | :---: |
-| Gradient Boosted | .823 | $42.33 | 15.0 | 288.8 |
-| Light GBM | .827 | $41.87 | 14.8 | 13.5 |
-
+<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/nlp_optimized_results.png" width="800">
 
 ## 9. Conclusion
 
