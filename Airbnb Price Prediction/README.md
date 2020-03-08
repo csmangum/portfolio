@@ -93,13 +93,13 @@ I used scikit learn's gridsearchcv algorithm to optimize a set of parameters for
 
 ## 8. Natural Language Processing - Topic Modeling
 
-<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/topic_9_wordcloud.png" width="500">
-<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/new_topic_2_wordcloud.png" width="500">
+<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/topic_9_wordcloud.png" width="450"><img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/new_topic_2_wordcloud.png" width="450">
 
+### Initial Model Development
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/nlp_results.png" width="800">
 
 
-### Optimized
+### Model Optimization
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/nlp_optimized_results.png" width="800">
 
 ## 9. Conclusion
