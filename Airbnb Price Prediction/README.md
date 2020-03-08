@@ -76,7 +76,7 @@ I went forward with four algorithms: Linear Regression, Random Forests, Gradient
 
 
 ### Best Performing Model
-![](initial_model.png)
+<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/initial_model_xgb.png" width="800">
 
 ***
 
@@ -87,12 +87,16 @@ I used scikit learn's gridsearchcv algorithm to optimize a set of parameters for
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/main_optimized_results.png" width="800">
 
 ### Optimized Model
-![](final_model.png)
+<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/optimized_model_lightgbm.png" width="800">
 
 ***
 
 ## 8. Natural Language Processing - Topic Modeling
 
+### LDA
+<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/nlp_cv_coherence.png" width="400"><img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/nlp_umass_coherence.png" width="400">
+
+### Wordclouds
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/topic_9_wordcloud.png" width="400"><img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/new_topic_2_wordcloud.png" width="400">
 
 ### Initial Model Development
