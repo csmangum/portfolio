@@ -18,11 +18,9 @@ The purpose of this project is to predict listing price based on several possibl
 
 ***
 # 1. Initial Cleaning & Processing
-
-### Findings
 The data quality is pretty good but there are some issues since the listings were scraped from the Airbnb website. There are 31,253 rows and more than 40 columns. For my use, I will only import 41 of them since many other are not useful for modeling. This first step includes some simple cleaning of data types and strings, followed by joining external data sources to provide further context for the algorithms. Many columns have missing data and four columns have more than 90% of values missing.
 
-### Actions
+## Actions
 * I removed columns that have more than 90% of values missing. Other columns with missing data will be handled later with imputation
 * I removed columns 'experiences_offered', 'country_code', 'country', 'has_availability' due to having only one unique value
 * Converted all the columns to appropriate data type
@@ -37,14 +35,13 @@ The data quality is pretty good but there are some issues since the listings wer
 # 2. Data Exploration
 I will look to predict daily listing price in the Los Angeles area. There are over 20,000 listings in the area with an average price around $126 a daily. Interestingly, the lowest daily price is $10 and the maximum all the way up to $10,000.
 
-### Findings
+## Findings
 * Most hosts respond within an hour
 * Most hosts are neither verified or superhosts
 * Bed type, requires license, and host has a profile pic are not a useful field
 * There are a handful of features that are correlated with price
 * A few features are highly correlated with each other
 * The target variable is skewed and will need to be log transformed 
-
 
 ***Distribution of daily pricing before transformation***  
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/original_price.png" width="500">
@@ -60,7 +57,7 @@ I will look to predict daily listing price in the Los Angeles area. There are ov
 # 3. Feature Engineering
 My goal with feature engineering was to leverage exisitng data in a more useful way, especially for the diffirent algorithms I'll be using. In the first step of my project I imported external data sources to expand the dataset. In this step, I make alterations to the data like transforming the target and using some simple string methods to get more out of the ammenities feature.
 
-### Actions
+## Actions
 * From the security deposit field, I create a boolean feature if there is/ or is not a security deposit required
 * With property type, 'Apartment', 'House', 'Condominium', 'Townhouse', 'Loft', and 'Guesthouse' are the most frequent. I converted all other to a misc category named 'Other'
 * From the amenities column I used simple text mining to identify boolean columns of specific amenities
@@ -91,8 +88,7 @@ Model performance was incredibly similar but there was a significant difference 
 
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/main_results.png" width="800">
 
-
-### Best Performing Model
+## Best Performing Model
 Below, the XGBoost barely out-performed the other two estimators. It's clear that there might be an issue with generalization with how there is a difference between train and test data.
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/initial_model_xgb.png" width="800">
 
@@ -104,7 +100,7 @@ I used scikit learn's gridsearchcv algorithm to optimize a set of parameters for
 
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/main_optimized_results.png" width="800">
 
-### Optimized Model
+## Optimized Model
 Overall, the LightGBM is my final choice with the much smaller runtime and similar performance to the others. I still have concerns with it's ability to generalize to unseen data with the difference between results here and with the training data.
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/optimized_model_lightgbm.png" width="800">
 
@@ -126,14 +122,14 @@ Images below are the two coherence scores during model optimization. In the end,
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/nlp_cv_coherence.png" width="700">
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/nlp_umass_coherence.png" width="700">
 
-### Wordclouds
+## Wordclouds
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/topic_9_wordcloud.png" width="400"><img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/new_topic_2_wordcloud.png" width="400">
 
-### Initial Model Development
+## Initial Model Development
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/nlp_results.png" width="800">
 
 
-### Model Optimization
+## Model Optimization
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/nlp_optimized_results.png" width="800">
 
 # 8. Conclusion
