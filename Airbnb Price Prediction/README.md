@@ -4,7 +4,7 @@
 # Overview
 Airbnb is a popular and fast-growing alternative to traditional lodging options. It opened in 2008 in San Francisco California and quickly grew around the world. Los Angeles California is a diverse and popular destination with multiple amusement parks, beaches, and outdoor locations offering people many reasons to visit the area. With the rise in the sharing economy, Airbnb has the potential to offer both customers and hosts more choices.</p>
 
-The purpose of this project is to predict listing price based on several possible features available from data collected through [Inside Airbnb](http://insideairbnb.com/get-the-data.html). This high-level overview will showcase my work with the data while there will be links to the specific notebooks with all the work completed to achieve project results.
+The purpose of this project is to predict listing price based on several possible features available from data collected through [Inside Airbnb](http://insideairbnb.com/get-the-data.html). The following high-level overview will showcase my work with the data while there will be links to the specific notebooks with all the work completed to achieve project results.
 ***
 # 1. Initial Cleaning & Processing
 
@@ -47,6 +47,8 @@ I will look to predict daily listing price in the Los Angeles area. There are ov
 ***
 
 # 3. Feature Engineer
+My goal with feature engineering was to leverage exisitng data in a more useful way, especially for the diffirent algorithms I'll be using. In the first step of my project I imported external data sources to expand the dataset. In this step, I make alterations to the data like transforming the target and using some simple string methods to get more out of the ammenities feature.
+
 ### Actions
 * From the security deposit field, I create a boolean feature if there is/ or is not a security deposit required
 * With property type, 'Apartment', 'House', 'Condominium', 'Townhouse', 'Loft', and 'Guesthouse' are the most frequent. I converted all other to a misc category named 'Other'
@@ -63,7 +65,7 @@ I will look to predict daily listing price in the Los Angeles area. There are ov
 
 # 4. Feature Selection
 
-With this section I wanted to see the benefit of feature selection on model performance and runtime. I used a Step-forward feature selection algorithm from the mlxtend library. In most cases, 15 features made up 95% of feature importance and I kept that number of features through the algorithm. In the end, feature selection had little impact on model performance or runtime for my needs.
+With this section I wanted to see the benefit of feature selection on model performance and runtime. I used a Step-forward feature selection algorithm from the mlxtend library. In most cases, 15 features made up 95% of feature importance and I kept that number of features through the algorithm. In the end, feature selection had little impact on model performance except for some decrease in overall runtime.
 
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/featue_importance.png" width="800">
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/cum_importance.png" width="600">
@@ -72,12 +74,15 @@ With this section I wanted to see the benefit of feature selection on model perf
 
 # 5. Initial Model Development
 
-I went forward with four algorithms: Linear Regression, Random Forests, Gradient Boosted Regression, and LightGBM from Microsoft. Model performance was similar, but the tree-based model performed better, especially the LightGBM model in both metrics and runtime. Next, I will optimize both gradient boosted models and see how they compare.
+I wanted to test out three different gradient boosting algorithms to see the differences in performance and runtime. I use estimators from scikit-learn, Microsoft LightGBM, and XGBoost. My main metric for performance was using Mean Squared Error, and taking the square root to get an interpretable metric.
+
+Model performance was incredibly similar but there was a significant difference in runtime. Scikit-learn's version took much longer and the Microsoft implementation is efficient. Next, I will optimize all three gradient boosted models and see how they compare.
 
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/main_results.png" width="800">
 
 
 ### Best Performing Model
+Below, the XGBoost barely out-performed the other two estimators. It's clear that there might be an issue with generalization with how there is a difference between train and test data.
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/initial_model_xgb.png" width="800">
 
 ***
@@ -89,13 +94,24 @@ I used scikit learn's gridsearchcv algorithm to optimize a set of parameters for
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/main_optimized_results.png" width="800">
 
 ### Optimized Model
+Overall, the LightGBM is my final choice with the much smaller runtime and similar performance to the others. I still have concerns with it's ability to generalize to unseen data with the difference between results here and with the training data.
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/optimized_model_lightgbm.png" width="800">
 
 ***
 
 # 7. Natural Language Processing - Topic Modeling
 
-### LDA
+## Latent Dirichlet Allocation
+
+***Process:***
+1. Tokenize listing descriptions
+2. Remove stopwords and punctuation
+3. Make bigrams
+4. Lemmatization
+5. Apply the Gensim LDA model
+6. Optimize the model based on two coherence scores: C_V and U_MASS
+
+Images below are the two coherence scores during model optimization. In the end, I went with 8 topics.
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/nlp_cv_coherence.png" width="700">
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/nlp_umass_coherence.png" width="700">
 
