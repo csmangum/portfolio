@@ -5,6 +5,17 @@
 Airbnb is a popular and fast-growing alternative to traditional lodging options. It opened in 2008 in San Francisco California and quickly grew around the world. Los Angeles California is a diverse and popular destination with multiple amusement parks, beaches, and outdoor locations offering people many reasons to visit the area. With the rise in the sharing economy, Airbnb has the potential to offer both customers and hosts more choices.</p>
 
 The purpose of this project is to predict listing price based on several possible features available from data collected through [Inside Airbnb](http://insideairbnb.com/get-the-data.html). The following high-level overview will showcase my work with the data while there will be links to the specific notebooks with all the work completed to achieve project results.
+
+### Contents
+1. Initial Cleaning & Processing
+2. Data Exploration
+3. Feature Engineering
+4. Feature Selection
+5. Initial Model Development
+6. Model Optimization
+7. Natural Language Processing - Topic Modeling
+8. Conclusion
+
 ***
 # 1. Initial Cleaning & Processing
 
@@ -46,7 +57,7 @@ I will look to predict daily listing price in the Los Angeles area. There are ov
 
 ***
 
-# 3. Feature Engineer
+# 3. Feature Engineering
 My goal with feature engineering was to leverage exisitng data in a more useful way, especially for the diffirent algorithms I'll be using. In the first step of my project I imported external data sources to expand the dataset. In this step, I make alterations to the data like transforming the target and using some simple string methods to get more out of the ammenities feature.
 
 ### Actions
