@@ -6,7 +6,7 @@ Airbnb is a popular and fast-growing alternative to traditional lodging options.
 
 The purpose of this project is to predict listing price based on several possible features available from data collected through [Inside Airbnb](http://insideairbnb.com/get-the-data.html). This high-level overview will showcase my work with the data while there will be links to the specific notebooks with all the work completed to achieve project results.
 ***
-## 1. Initial Cleaning & Processing
+# 1. Initial Cleaning & Processing
 
 ### Findings
 The data quality is pretty good but there are some issues since the listings were scraped from the Airbnb website. There are 31,253 rows and more than 40 columns. For my use, I will only import 41 of them since many other are not useful for modeling. This first step includes some simple cleaning of data types and strings, followed by joining external data sources to provide further context for the algorithms. Many columns have missing data and four columns have more than 90% of values missing.
@@ -23,7 +23,7 @@ The data quality is pretty good but there are some issues since the listings wer
 
 ***
 
-## 2. Data Exploration
+# 2. Data Exploration
 I will look to predict daily listing price in the Los Angeles area. There are over 20,000 listings in the area with an average price around $126 a daily. Interestingly, the lowest daily price is $10 and the maximum all the way up to $10,000.
 
 ### Findings
@@ -46,7 +46,7 @@ I will look to predict daily listing price in the Los Angeles area. There are ov
 
 ***
 
-## 3. Feature Engineer
+# 3. Feature Engineer
 ### Actions
 * From the security deposit field, I create a boolean feature if there is/ or is not a security deposit required
 * With property type, 'Apartment', 'House', 'Condominium', 'Townhouse', 'Loft', and 'Guesthouse' are the most frequent. I converted all other to a misc category named 'Other'
@@ -61,7 +61,7 @@ I will look to predict daily listing price in the Los Angeles area. There are ov
 
 ***
 
-## 4. Feature Selection
+# 4. Feature Selection
 
 With this section I wanted to see the benefit of feature selection on model performance and runtime. I used a Step-forward feature selection algorithm from the mlxtend library. In most cases, 15 features made up 95% of feature importance and I kept that number of features through the algorithm. In the end, feature selection had little impact on model performance or runtime for my needs.
 
@@ -70,7 +70,7 @@ With this section I wanted to see the benefit of feature selection on model perf
 
 ***
 
-## 6. Initial Model Development
+# 5. Initial Model Development
 
 I went forward with four algorithms: Linear Regression, Random Forests, Gradient Boosted Regression, and LightGBM from Microsoft. Model performance was similar, but the tree-based model performed better, especially the LightGBM model in both metrics and runtime. Next, I will optimize both gradient boosted models and see how they compare.
 
@@ -82,7 +82,7 @@ I went forward with four algorithms: Linear Regression, Random Forests, Gradient
 
 ***
 
-## 7. Model Optimization
+# 6. Model Optimization
 
 I used scikit learn's gridsearchcv algorithm to optimize a set of parameters for each model. This did result in high runtimes but nothing impractical. I wanted to get a good sense of performance without risking significant overfitting. Again, the LightGBM model performed better and was optimized in significantly less time. However, the model scored on the training set overfit much more based on the difference when scored on the test data.
 
@@ -93,7 +93,7 @@ I used scikit learn's gridsearchcv algorithm to optimize a set of parameters for
 
 ***
 
-## 8. Natural Language Processing - Topic Modeling
+# 7. Natural Language Processing - Topic Modeling
 
 ### LDA
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/nlp_cv_coherence.png" width="700">
@@ -109,7 +109,7 @@ I used scikit learn's gridsearchcv algorithm to optimize a set of parameters for
 ### Model Optimization
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/nlp_optimized_results.png" width="800">
 
-## 9. Conclusion
+# 8. Conclusion
 
 ## Notebooks
 1. [Initial Cleaning](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/1.%20Initial%20Cleaning.ipynb)
