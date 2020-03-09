@@ -7,14 +7,14 @@ Airbnb is a popular and fast-growing alternative to traditional lodging options.
 The purpose of this project is to predict listing price based on several possible features available from data collected through [Inside Airbnb](http://insideairbnb.com/get-the-data.html). The following high-level overview will showcase my work with the data while there will be links to the specific notebooks with all the work completed to achieve project results.
 
 ### Contents
-1. Initial Cleaning & Processing
-2. Data Exploration
-3. Feature Engineering
-4. Feature Selection
-5. Initial Model Development
-6. Model Optimization
-7. Natural Language Processing - Topic Modeling
-8. Conclusion
+1. [Initial Cleaning & Processing](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/README.md#1-initial-cleaning--processing)
+2. [Data Exploration](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/README.md#2-data-exploration)
+3. [Feature Engineering](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/README.md#3-feature-engineering)
+4. [Feature Selection](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/README.md#4-feature-selection)
+5. [Initial Model Development](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/README.md#5-initial-model-development)
+6. [Model Optimization](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/README.md#6-model-optimization)
+7. [Natural Language Processing - Topic Modeling](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/README.md#7-natural-language-processing---topic-modeling)
+8. [Conclusion](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/README.md#8-conclusion)
 
 ***
 # 1. Initial Cleaning & Processing
