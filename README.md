@@ -3,12 +3,6 @@
 [<img src="https://github.com/csmangum/portfolio/blob/master/img/quad_v2.gif">](https://github.com/csmangum/portfolio/tree/master/Airbnb%20Price%20Prediction)
 [<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/airbnb_featuring.png" width="900">](https://github.com/csmangum/portfolio/tree/master/Airbnb%20Price%20Prediction)
 
-## Secondary Portfolio Projects: 
-  - [California Housing Market](https://github.com/csmangum/portfolio/blob/master/Projects/Home_Value_Prediction/California_Housing_Market.ipynb): 
-    - Predict housing prices in California.
-  - [Predicting Employee Retention](https://github.com/csmangum/portfolio/blob/master/Projects/Employee_Satisfaction/Employee_Satisfaction.ipynb): 
-    - Determine why employees are leaving.
-
 ## Data Visualizations:
 
 ## Going Deep In Machine Learning:
