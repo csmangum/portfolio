@@ -14,7 +14,8 @@ The purpose of this project is to predict listing price based on several possibl
 5. [Initial Model Development](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/README.md#5-initial-model-development)
 6. [Model Optimization](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/README.md#6-model-optimization)
 7. [Natural Language Processing - Topic Modeling](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/README.md#7-natural-language-processing---topic-modeling)
-8. [Conclusion](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/README.md#8-conclusion)
+8. [Conclusion](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/README.md#8-conclusion
+9. [Notebooks](https://github.com/csmangum/portfolio/tree/master/Airbnb%20Price%20Prediction#notebooks)
 
 ***
 # 1. Initial Cleaning & Processing
@@ -90,6 +91,7 @@ Model performance was incredibly similar but there was a significant difference 
 
 ## Best Performing Model
 Below, the XGBoost barely out-performed the other two estimators. It's clear that there might be an issue with generalization with how there is a difference between train and test data.  
+
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/initial_model_xgb.png" width="800">
 
 ***
@@ -101,7 +103,8 @@ I used scikit learn's gridsearchcv algorithm to optimize a set of parameters for
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/main_optimized_results.png" width="800">
 
 ## Optimized Model
-Overall, the LightGBM is my final choice with the much smaller runtime and similar performance to the others. I still have concerns with it's ability to generalize to unseen data with the difference between results here and with the training data.  
+Overall, the LightGBM is my final choice with the much smaller runtime and similar performance to the others. I still have concerns with it's ability to generalize to unseen data with the difference between results here and with the training data.
+
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/optimized_model_lightgbm.png" width="800">
 
 ***
