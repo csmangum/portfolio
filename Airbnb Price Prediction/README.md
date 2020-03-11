@@ -13,7 +13,7 @@ The purpose of this project is to predict listing price based on several possibl
 4. [Feature Selection](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/README.md#4-feature-selection)
 5. [Initial Model Development](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/README.md#5-initial-model-development)
 6. [Model Optimization](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/README.md#6-model-optimization)
-7. [Natural Language Processing - Topic Modeling](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/README.md#7-natural-language-processing---topic-modeling)
+7. [NLP - Topic Modeling](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/README.md#7-natural-language-processing---topic-modeling)
 8. [Conclusion](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/README.md#8-conclusion)
 9. [Notebooks](https://github.com/csmangum/portfolio/tree/master/Airbnb%20Price%20Prediction#notebooks)
 
