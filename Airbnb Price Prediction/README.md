@@ -113,7 +113,7 @@ Overall, the LightGBM is my final choice with the much smaller runtime and simil
 
 ## Latent Dirichlet Allocation
 
-***Process:***
+### Process:
 1. Tokenize listing descriptions
 2. Remove stopwords and punctuation
 3. Make bigrams
@@ -121,9 +121,9 @@ Overall, the LightGBM is my final choice with the much smaller runtime and simil
 5. Apply the Gensim LDA model
 6. Optimize the model based on two coherence scores: C_V and U_MASS
 
-Images below are the two coherence scores during model optimization. In the end, I went with 8 topics.  
-<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/nlp_cv_coherence.png" width="700">
-<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/nlp_umass_coherence.png" width="700">
+**Images below are the two coherence scores during model optimization. In the end, I went with 8 topics.**  
+<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/nlp_cv_coherence.png" width="800">
+<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/nlp_umass_coherence.png" width="800">
 
 ## Wordclouds
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/topic_9_wordcloud.png" width="400"><img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/new_topic_2_wordcloud.png" width="400">
@@ -136,6 +136,16 @@ Images below are the two coherence scores during model optimization. In the end,
 <img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/nlp_optimized_results.png" width="800">
 
 # 8. Conclusion
+Unsurprisingly, the three boosting-based estimators performed similar in multiple circumstances, What was surprising, was how efficient Microsoft’s implementation is compared to scikit-learn's. Feature selection through a step-forward algorithm and very little impact on the metrics but had a small impact on runtime. Also, applying NLP to the listing description did provide a small impact to the overall results.
+
+My final selected model was the optimized LightGB model with a root-mean-squared-error of $43.47. The number of people the listing accommodates is a large influencer to the model as well as a cleaning fee. Both follow common sense thinking but it was interesting to see some of my engineered features like distance to Downtown LA as such a powerful predictor. There is some instability in the model and it likely won't generalize well. This model is specifically fitted to the marker area and does not transfer over to other markets.
+
+
+## Future Plans
+1. NLP sentiment analysis with listing reviews
+2. Look to incoproate more external data sources
+3. Leverage more than one market area
+4. Further geospatial analysis
 
 ## Notebooks
 1. [Initial Cleaning & Processing](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/notebooks/1.%20Initial%20Cleaning%20%26%20Processing.ipynb)
