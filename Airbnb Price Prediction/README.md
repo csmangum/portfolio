@@ -152,5 +152,5 @@ My final selected model was the optimized LightGB model with a root-mean-squared
 2. [Data Exploration](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/notebooks/2.%20Data%20Exploration.ipynb)
 3. [Feature Engineering](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/notebooks/3.%20Feature%20Engineering.ipynb) 
 4. [Feature Selection](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/notebooks/4.%20Feature%20Selection.ipynb)
-5. [Model Selection and Optimization](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/5.%20Model%20Selection%20%26%20Optimization.ipynb) 
-6. NLP - Topic Modeling
+5. [Model Selection and Optimization](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/notebooks/5.%20Model%20Selection%20%26%20Optimization.ipynb) 
+6. [NLP - Topic Modeling](https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/notebooks/Topic%20Modeling%20-%20NLP.ipynb)
