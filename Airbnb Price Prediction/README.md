@@ -19,7 +19,7 @@ The purpose of this project is to predict listing price based on several possibl
 
 ***
 # 1. Initial Cleaning & Processing
-The data quality is pretty good but there are some issues since the listings were scraped from the Airbnb website. There are 31,253 rows and more than 40 columns. For my use, I will only import 41 of them since many other are not useful for modeling. This first step includes some simple cleaning of data types and strings, followed by joining external data sources to provide further context for the algorithms. Many columns have missing data and four columns have more than 90% of values missing.
+The data quality is fair but there are some issues since the listings were scraped from the Airbnb website. There are 31,253 rows and more than 50 columns. For my use, I will only import 41 of them since many other are not useful for modeling. This first step includes some simple cleaning of data types and strings, followed by joining external data sources to provide further context for the algorithms. Many columns have missing data and four columns have more than 90% of values missing.
 
 ## Actions
 * I removed columns that have more than 90% of values missing. Other columns with missing data will be handled later with imputation
@@ -28,7 +28,7 @@ The data quality is pretty good but there are some issues since the listings wer
 * Changed T/F columns to binary
 * Cleaned the currency related fields, zipcodes, and percentage columns
 * Removed listings with $500 or more daily price. Around 95% of listings are below this amount
-* Added topic models from NLP work on the listing description
+* Added topic models from NLP work on the listing description (Described in a later section)
 * Added zip code-based metrics for income and population
 
 ***
@@ -138,7 +138,7 @@ Overall, the LightGBM is my final choice with the much smaller runtime and simil
 # 8. Conclusion
 Unsurprisingly, the three boosting-based estimators performed similar in multiple circumstances, What was surprising, was how efficient Microsoft’s implementation is compared to scikit-learn's. Feature selection through a step-forward algorithm and very little impact on the metrics but had a small impact on runtime. Also, applying NLP to the listing description did provide a small impact to the overall results.
 
-My final selected model was the optimized LightGB model with a root-mean-squared-error of $43.47. The number of people the listing accommodates is a large influencer to the model as well as a cleaning fee. Both follow common sense thinking but it was interesting to see some of my engineered features like distance to Downtown LA as such a powerful predictor. There is some instability in the model and it likely won't generalize well. This model is specifically fitted to the marker area and does not transfer over to other markets.
+My final selected model was the optimized LightGB model with a root-mean-squared-error of $43.47. The number of people the listing accommodates is a large influencer to the model as well as a cleaning fee. Both follow common sense thinking but it was interesting to see some of my engineered features like distance to Downtown LA as such a powerful predictor. There is some instability in the model and it likely won't generalize well. This model is specifically fitted to the market area and does not transfer over to other markets.
 
 
 ## Future Plans
