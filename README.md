@@ -3,7 +3,8 @@
 [<img src="https://github.com/csmangum/portfolio/blob/master/img/quad_v2.gif">](https://github.com/csmangum/portfolio/tree/master/Airbnb%20Price%20Prediction)
 [<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/airbnb_featuring.png" width="900">](https://github.com/csmangum/portfolio/tree/master/Airbnb%20Price%20Prediction)
 
-## Data Visualizations:
+## Tools and Scripts:
+- [Named Entity Extraction - NLP](https://github.com/csmangum/portfolio/tree/master/tools/named_entity)
 
 ## Going Deep In Machine Learning:
   - [Decision Tree Classification](https://github.com/csmangum/portfolio/blob/master/Machine%20Learning/Decision_Trees_Classification.ipynb)
