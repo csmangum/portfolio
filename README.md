@@ -1,4 +1,9 @@
 ## Primary Portfolio Projects: 
+[<img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/mugfakes_title.jpg" width="900">](https://github.com/csmangum/portfolio/tree/master/Airbnb%20Price%20Prediction) 
+[<img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/mug_grid_mosiac.jpg">](https://github.com/csmangum/portfolio/tree/master/Airbnb%20Price%20Prediction)
+
+
+
 [<img src="https://github.com/csmangum/portfolio/blob/master/img/airbnb_portfolio_title.png" width="900">](https://github.com/csmangum/portfolio/tree/master/Airbnb%20Price%20Prediction) 
 [<img src="https://github.com/csmangum/portfolio/blob/master/img/quad_v2.gif">](https://github.com/csmangum/portfolio/tree/master/Airbnb%20Price%20Prediction)
 [<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/airbnb_featuring.png" width="900">](https://github.com/csmangum/portfolio/tree/master/Airbnb%20Price%20Prediction)
