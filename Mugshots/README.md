@@ -1,7 +1,7 @@
 ***This is an ongoing project*** 
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/mugfakes_title1.jpg" width="800">  
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/mug_grid.jpg" width="800">
-* ^Curated images from my final run with StyleGAN. The image on the portfolio main page was compiled with a mosiac of real mugshots*  
+*^Curated images from my final run with StyleGAN. The image on the portfolio main page was compiled with a mosiac of real mugshots*  
 
 
 # Overview
