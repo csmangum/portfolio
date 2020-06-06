@@ -10,22 +10,20 @@ The purpose of this project was to first find a novel data source and then work 
 3. StyleGAN2
 4. Interactive MugFake model
 
-### Contents
-
-First Run | GAN | 32x32
+## First Run | GAN | 32x32
 
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/fake_samples_epoch_0999.png" width="800">
 
 
-Second Run | StyleGAN | 64x64
+## Second Run | StyleGAN | 64x64
 
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/fake_samples_epoch_1190.png" width="800">
 
-Third Run | StyleGAN | 64x64
+## Third Run | StyleGAN | 64x64
 
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/427100.png" width="800">
 
 
-Fourth Run | StyleGAN | 256x256
+## Fourth Run | StyleGAN | 256x256
 
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/256_362100.png" width="800">
