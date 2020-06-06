@@ -13,13 +13,13 @@ The purpose of this project was to first find a novel data source and then work 
 ### Contents
 
 First Run  
-<img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/fake_samples_epoch_0999.png" width="500">
+<img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/fake_samples_epoch_0999.png" width="800">
 
 Second Run  
-<img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/fake_samples_epoch_1190.png" width="500">
+<img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/fake_samples_epoch_1190.png" width="800">
 
 Third Run  
-<img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/427100.png" width="500">
+<img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/427100.png" width="800">
 
 Fourth Run  
-<img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/256_362100.png" width="500">
+<img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/256_362100.png" width="800">
