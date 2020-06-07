@@ -13,29 +13,53 @@ All images were sourced from two county websites. One for Maricopa County in Ari
 
 ## Image Processing
 
-# Attenpts
+# Attempts
+
+## First Run
 With my first attempt at generating mugshots, I went with a relativlet simple approach to first understand the architecture of a generator/descriminator. I used PyTorch to match the original design in the introductory paper that described the novel approach. I did not achieve great results in this first run and came to a point at about 700 epochs where the gradients between the D and G continually diverged.
 
 **Details:**  
 * Image size: 64x64
 * Batch size: 64
 * Learning Rate: 0.0002
-* 1,000 epochs
+* Epochs: 1,000
 * Method: DGAN  
 
-## First Run | GAN | 32x32
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/fake_samples_epoch_0999.png" width="800">
 
+## Second Run
 
-## Second Run | StyleGAN | 64x64
+
+**Details:**  
+* Image size: 
+* Batch size: 
+* Learning Rate: 
+* Epochs:
+* Method:   
 
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/fake_samples_epoch_1190.png" width="800">
 
-## Third Run | StyleGAN | 64x64
+## Third Run
+
+
+**Details:**  
+* Image size: 
+* Batch size: 
+* Learning Rate: 
+* Epochs:
+* Method:  
 
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/427100.png" width="800">
 
 
-## Fourth Run | StyleGAN | 256x256
+## Fourth Run
+
+
+**Details:**  
+* Image size: 
+* Batch size: 
+* Learning Rate: 
+* Epochs:
+* Method:  
 
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/256_362100.png" width="800">
