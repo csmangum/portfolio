@@ -6,7 +6,7 @@
 
 
 # Overview
-The purpose of this project was to first find a novel data source and then work to generate realistic fake mugshots folowwing some of the major advancments in Generative Adversarial Networks (GAN) over the past few years. I first needed to find real mugshot images online. There are some websites where you can purchase access to mugshots but I wanted to gather the images myself to have more control over the quality and type. To accomplish this I created several web scrapers that pulled mugshots from local govermnet websites where public access to mugshots are legal.
+The purpose of this project was to first find a novel data source and then work to generate realistic fake mugshots folowwing some of the major advancments in Generative Adversarial Networks (GAN) over the past few years. I first needed to find real mugshot images online. There are some websites where you can purchase access to mugshots but I wanted to gather the images myself to have more control over the quality and type.
 
 ## Data
 All images were sourced from two county websites. One for Maricopa County in Arizona and the other for Osceola County in Florida. I created webscrapers to gather inmate details and download mughsots, on a daily basis. I considered gathering images from more than two sources but ended up staying with the two. The image quality is similar but I did initially get better results from the images from Florida.
