@@ -2,6 +2,7 @@
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/mugfakes_title1.jpg" width="800">  
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/mug_grid.jpg" width="800">  
 *^Curated images from my final run with StyleGAN.*  
+
 *^^The image on the portfolio main page was compiled from a mosiac of real mugshots*  
 
 
@@ -49,7 +50,7 @@ With my first attempt at generating mugshots, I went with a relatively simple ap
 * Image size: Varies  
 * Batch size: Varies  
 * Learning Rate: .001
-* Iterations:
+* Iterations: 427,000
 * Method: StyleGAN  
 
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/427100.png" width="800">
@@ -62,7 +63,7 @@ With my first attempt at generating mugshots, I went with a relatively simple ap
 * Image size: Varies  
 * Batch size: Varies  
 * Learning Rate: .001
-* Iterations:
+* Iterations: 362,000
 * Method: StyleGAN  
 
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/256_362100.png" width="800">
