@@ -10,11 +10,10 @@ Use Generative Adversarial Networks (GAN) to generate realistic images trained o
 
 **Approach:**
 
-* Create novel image dataset through web scraping
-1. Found here  
-* Experminet to identify aspects that may impact the training process  
- * First following the orignal framework  
- * Then use a PyTorch implementation of NVIDIAs GAN adaption named StyleGAN  
+* Create novel image dataset through web scraping (Found here)
+* Experminet to identify aspects that may impact the training process
+  * First following the orignal framework
+  * Then use a PyTorch implementation of NVIDIAs GAN adaption named StyleGAN  
 
 
 
