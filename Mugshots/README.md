@@ -10,7 +10,9 @@ Use Generative Adversarial Networks (GAN) to generate realistic images trained o
 
 **Approach:**
 1. Create novel image dataset through web scraping
+  * cff
 2. Experminet to identify aspects that may impact the training process
+  * dffd
 
 
 
