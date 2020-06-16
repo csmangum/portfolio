@@ -9,12 +9,12 @@
 Use Generative Adversarial Networks (GAN) to generate realistic images trained on thousands of actual mugshots.
 
 **Approach:**
-* Item
-1. Create novel image dataset through web scraping  
- a. Found here  
-2. Experminet to identify aspects that may impact the training process  
- a. First following the orignal framework  
- b. Then use a PyTorch implementation of NVIDIAs GAN adaption named StyleGAN  
+
+* Create novel image dataset through web scraping  
+ * Found here  
+* Experminet to identify aspects that may impact the training process  
+ * First following the orignal framework  
+ * Then use a PyTorch implementation of NVIDIAs GAN adaption named StyleGAN  
 
 
 
