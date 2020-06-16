@@ -1,6 +1,6 @@
 # This is an ongoing project  
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/mugfakes_title1.jpg" width="800">  
-<img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/mug_grid.jpg" width="800">  
+<img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/mug_grid.jpg" width="800">
 *^Curated images from my final run with StyleGAN.*  
 
 # Overview
@@ -9,7 +9,7 @@
 Use Generative Adversarial Networks (GAN) to generate realistic images trained on thousands of actual mugshots.
 
 ### Approach
-* Create novel image dataset through web scraping (Found here)
+* Create novel image dataset through web scraping
 * Experiment with the GAN architecture
   * First following the [original](https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf) framework
   * Then use a PyTorch [implementation](https://github.com/rosinality/style-based-gan-pytorch) of NVIDIA's GAN adaption named [StyleGAN](https://github.com/NVlabs/stylegan)  
@@ -24,9 +24,9 @@ I initially performed little image processing but did add a few steps as I exper
 * Center cropped on the face
 * Resized the image to 64 pixels (StyleGAN eventually resized at multiple pixel values)
 * Manually deleted images that were:
- * Out-of-focus
- * Defective images (looking down, etc.)
- * Individuals with facemasks (Due to COVID-19 period)
+  * Out-of-focus
+  * Defective images (looking down, etc.)
+  * Individuals with facemasks (Due to COVID-19 period)
 
 # Attempts
 
