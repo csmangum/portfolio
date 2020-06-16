@@ -27,6 +27,9 @@ I initially performed little image processing but did add a few steps as I exper
   * Out-of-focus
   * Defective images (looking down, etc.)
   * Individuals with facemasks (Due to COVID-19 period)
+  
+### Learnings
+1. 
 
 # Attempts
 
