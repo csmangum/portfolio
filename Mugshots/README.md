@@ -10,7 +10,10 @@
   
 ***This is an ongoing project***  
   
-The purpose of this project was to first find a novel data source and then work to generate realistic fake mugshots folowwing some of the major advancments in Generative Adversarial Networks (GAN) over the past few years. I first needed to find real mugshot images online. There are some websites where you can purchase access to mugshots but I wanted to gather the images myself to have more control over the quality and type.
+**Project Goal:**
+Use Generative Adversarial Networks (GAN) to generate realistic images trained on thousands of actual mugshots 
+
+The purpose of this project was to first find a novel data source and then work to generate realistic fake mugshots folowwing some of the major advancments with GANs over the past few years. I first needed to find real mugshot images online. There are some websites where you can purchase access to mugshots but I wanted to gather the images myself to have more control over the quality and type.
 
 ## Data
 All images were sourced from two county websites. One for Maricopa County in Arizona and the other for Osceola County in Florida. I created webscrapers to gather inmate details and download mughsots, on a daily basis. I considered gathering images from more than two sources but ended up staying with the two. The image quality is similar but I did initially get better results from the images from Florida.
@@ -66,4 +69,12 @@ With my first attempt at generating mugshots, I went with a relatively simple ap
 * Iterations: 362,000
 * Method: StyleGAN  
 
-<img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/256_362100.png" width="800">
+<img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/256_362100.png" width="800">  
+
+# Additional Analysis
+
+## Gender Classification
+
+## Injury Detection
+
+## Violent Crime Identification
