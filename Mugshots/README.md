@@ -5,11 +5,10 @@
 
 # Overview
 
-**Project Goal:**
+### Project Goal
 Use Generative Adversarial Networks (GAN) to generate realistic images trained on thousands of actual mugshots.
 
-**Approach:**
-
+### Approach
 * Create novel image dataset through web scraping (Found here)
 * Experminet to identify aspects that may impact the training process
   * First following the orignal framework
