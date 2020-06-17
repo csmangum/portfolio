@@ -34,7 +34,7 @@ I initially performed little image processing but did add a few steps as I exper
 3. It gets to a point where many faces are incredibly similar
 
 # Training
-## First Run
+### First Run
 With my first attempt at generating mugshots, I went with a relatively simple approach to first understand the architecture of a Generator (**G**) and Discriminator (**D**). I did not achieve great results in this first run and came to a point at about 700 epochs where the gradients between the **D** and **G** continually diverged.
 
 **Details:**  
@@ -46,8 +46,8 @@ With my first attempt at generating mugshots, I went with a relatively simple ap
 
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/fake_samples_epoch_0999.png" width="800">
 
-## Second Run
-
+### Second Run
+In this attempt I used only images from the Florida subset since the image quality seemed more uniform and focused. Even after 1,000 iterations the model hit it's limit at this resolution. This was the moment I decided to use the StyleGAN approach for more detailed images.
 
 **Details:**  
 * Image size: 64
@@ -59,7 +59,7 @@ With my first attempt at generating mugshots, I went with a relatively simple ap
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/fake_samples_epoch_1190.png" width="800">
 
 ## Third Run
-
+Using only the mugshots from Florida, I ran for more than 400,000 iterations with the StyleGAN architecture getting decent results. There was still some anomolys and a lot of the faces still didn't look realistic. In my next approach I will use mugshots from both state agencies.
 
 **Details:**  
 * Image size: Varies  
