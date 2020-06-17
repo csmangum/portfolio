@@ -1,7 +1,7 @@
 # This is an ongoing project
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/mugfakes_title1.jpg" width="800">  
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/mug_grid.jpg" width="800">
-^Curated images from my final run with StyleGAN 
+*^Curated images from my final run with StyleGAN*
 
 # Overview
 
@@ -58,7 +58,7 @@ In this attempt I used only images from the Florida subset since the image quali
 
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/fake_samples_epoch_1190.png" width="800">
 
-## Third Run
+### Third Run
 Using only the mugshots from Florida, I ran for more than 400,000 iterations with the StyleGAN architecture getting decent results. There was still some anomolys and a lot of the faces still didn't look realistic. In my next approach I will use mugshots from both state agencies.
 
 **Details:**  
@@ -71,7 +71,7 @@ Using only the mugshots from Florida, I ran for more than 400,000 iterations wit
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/427100.png" width="800">
 
 
-## Fourth Run
+### Fourth Run
 
 
 **Details:**  
