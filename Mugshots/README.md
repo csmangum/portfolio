@@ -1,4 +1,4 @@
-# This is an ongoing project  
+# This is an ongoing project
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/mugfakes_title1.jpg" width="800">  
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/mug_grid.jpg" width="800">
 ^Curated images from my final run with StyleGAN 
@@ -29,12 +29,13 @@ I initially performed little image processing but did add a few steps as I exper
   * Individuals with facemasks (Due to COVID-19 period)
   
 ### Learnings
-1. 
+1. Batch size matters, not only in GPU memory usage
+2. Close-up portraits are more difficult to train
+3. It gets to a point where many faces are incredibly similar
 
-# Attempts
-
+# Training
 ## First Run
-With my first attempt at generating mugshots, I went with a relatively simple approach to first understand the architecture of a Generator (**G**) and Discriminator (**D**). I used PyTorch to match the original design in the introductory paper that described the novel approach. I did not achieve great results in this first run and came to a point at about 700 epochs where the gradients between the **D** and **G** continually diverged.
+With my first attempt at generating mugshots, I went with a relatively simple approach to first understand the architecture of a Generator (**G**) and Discriminator (**D**). I did not achieve great results in this first run and came to a point at about 700 epochs where the gradients between the **D** and **G** continually diverged.
 
 **Details:**  
 * Image size: 64x64
