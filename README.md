@@ -10,6 +10,7 @@
 
 ## Tools and Scripts:
 - [Named Entity Extraction - NLP](https://github.com/csmangum/portfolio/tree/master/tools/named_entity)
+- [PyPinion - NLP](https://github.com/csmangum/pypinion)
 
 ## Going Deep In Machine Learning:
   - [Decision Tree Classification](https://github.com/csmangum/portfolio/blob/master/Machine%20Learning/Decision_Trees_Classification.ipynb)
