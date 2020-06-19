@@ -8,16 +8,16 @@
 ### Project Goal
 Use Generative Adversarial Networks (GAN) to generate realistic images trained on thousands of actual mugshots.
 
-### Approach
+## Approach
 * Create novel image dataset through [web scraping](https://github.com/csmangum/portfolio/blob/master/Mugshots/get_mugshots.ipynb)
 * Experiment with the GAN architecture
   * First following the [original](https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf) framework
   * Then use a PyTorch [implementation](https://github.com/rosinality/style-based-gan-pytorch) of NVIDIA's GAN adaption named [StyleGAN](https://github.com/NVlabs/stylegan)  
 
-### Data
+## Data
 All images were sourced from two county websites. One for Maricopa County in Arizona and the other for Osceola County in Florida. I created webscrapers to gather inmate details and download mughsots, on a daily basis. I considered gathering images from more than two sources but ended up staying with the two. The image quality is similar but I did initially get better results from the images from Florida.
 
-### Image Processing
+## Image Processing
 I initially performed little image processing but did add a few steps as I experimented more and more. Here are the steps I took to prepare the images for training:
 
 * Filter out images where the face covered more than 40% of the image
@@ -28,7 +28,7 @@ I initially performed little image processing but did add a few steps as I exper
   * Defective images (looking down, etc.)
   * Individuals with facemasks (Due to COVID-19 period)
   
-### Learnings
+## Learnings
 1. Batch size matters, not only in GPU memory usage
 2. Close-up portraits are more difficult to train
 3. It gets to a point where many faces are incredibly similar
