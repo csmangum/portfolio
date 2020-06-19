@@ -87,6 +87,3 @@ Using only the mugshots from Florida, I ran for more than 400,000 iterations wit
 
 ## Gender Classification
 
-## Injury Detection
-
-## Violent Crime Identification
