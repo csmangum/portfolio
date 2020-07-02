@@ -8,7 +8,7 @@
 [<img src="https://github.com/csmangum/portfolio/blob/master/img/quad_v2.gif">](https://github.com/csmangum/portfolio/tree/master/Airbnb%20Price%20Prediction)
 [<img src="https://github.com/csmangum/portfolio/blob/master/Airbnb%20Price%20Prediction/img/airbnb_featuring.png" width="900">](https://github.com/csmangum/portfolio/tree/master/Airbnb%20Price%20Prediction)
 
-## Tools and Scripts:
+## Additional Work:
 - [PyPinion](https://github.com/csmangum/pypinion) - NLP model designed to identify opinions in text
 - [Named Entity Extraction](https://github.com/csmangum/portfolio/blob/master/tools/named_entity/named_entity.py) - Script to extract people from a document
 
