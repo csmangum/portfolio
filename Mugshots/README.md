@@ -1,5 +1,5 @@
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/mugfakes_title1.jpg" width="900">  
-<img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/grid_3x2_mosaic.jpg" width="900">
+<img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/grid_3x2.jpg" width="900">
 ^Curated images from my final run with StyleGAN
 
 # Overview
