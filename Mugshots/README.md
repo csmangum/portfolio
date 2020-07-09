@@ -1,4 +1,4 @@
-<img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/mugfakes_title1.jpg" width="900">  
+<img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/mugfakes_title1.jpg" width="900">
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/grid_3x2.jpg" width="900">
 ^Curated images from my final run with StyleGAN
 
@@ -28,7 +28,7 @@ I initially performed little image processing but did add a few steps as I exper
   * Individuals with facemasks (Due to COVID-19 period)
   
 ## Learnings
-1. Batch size matters, not only in GPU memory usage
+1. Batch size matters
 2. Close-up portraits are more difficult to train
 3. It gets to a point where many faces are incredibly similar
 
@@ -38,9 +38,8 @@ With my first attempt at generating mugshots, I went with a relatively simple ap
 
 **Details:**  
 * Image size: 64x64
-* Batch size: 64
-* Learning Rate: 0.0002
-* Epochs: 1,000
+* Image count:
+* Iterations: 1,000
 * Method: DGAN  
 
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/fake_samples_epoch_0999.png" width="800">
@@ -49,9 +48,8 @@ With my first attempt at generating mugshots, I went with a relatively simple ap
 In this attempt I used only images from the Florida subset since the image quality seemed more uniform and focused. Even after 1,000 iterations the model hit it's limit at this resolution. This was the moment I decided to use the StyleGAN approach for more detailed images.
 
 **Details:**  
-* Image size: 64
-* Batch size: 128
-* Learning Rate: **D**=0.0001 **G**=0.001
+* Image size: 64x64
+* Image count:
 * Iterations: 1,000
 * Method: DGAN  
 
@@ -61,9 +59,8 @@ In this attempt I used only images from the Florida subset since the image quali
 Using only the mugshots from Florida, I ran for more than 400,000 iterations with the StyleGAN architecture getting decent results. There was still some anomolys and a lot of the faces still didn't look realistic. In my next approach I will use mugshots from both state agencies.
 
 **Details:**  
-* Image size: Varies  
-* Batch size: Varies  
-* Learning Rate: .001
+* Image size:  
+* Image count:
 * Iterations: 427,000
 * Method: StyleGAN  
 
@@ -73,9 +70,8 @@ Using only the mugshots from Florida, I ran for more than 400,000 iterations wit
 ## Fourth Run
 
 **Details:**  
-* Image size: Varies  
-* Batch size: Varies  
-* Learning Rate: .001
+* Image size:  
+* Image count:
 * Iterations: 362,000
 * Method: StyleGAN  
 
@@ -83,6 +79,5 @@ Using only the mugshots from Florida, I ran for more than 400,000 iterations wit
 
 # Additional Analysis
 
-## Gender Classification
-
-[Notebook](https://github.com/csmangum/portfolio/blob/master/Mugshots/Gender_Classification.ipynb)
+[Gender Classification](https://github.com/csmangum/portfolio/blob/master/Mugshots/Gender_Classification.ipynb)
+[Age Prediction](https://github.com/csmangum/portfolio/blob/master/Mugshots/Gender_Classification.ipynb)
