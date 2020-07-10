@@ -13,7 +13,7 @@ Use Generative Adversarial Networks (GAN) to generate realistic images trained o
   * First following the [original](https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf) framework
   * Then use a PyTorch [implementation](https://github.com/rosinality/style-based-gan-pytorch) of NVIDIA's GAN adaption named [StyleGAN](https://github.com/NVlabs/stylegan)  
 
-## Data
+# Data
 All images were sourced from two county websites. One for Maricopa County in Arizona and the other for Osceola County in Florida. I created webscrapers to gather inmate details and download mughsots, on a daily basis. I considered gathering images from more than two sources but ended up staying with the two. The image quality is similar but I did initially get better results from the images from Florida.
 
 ## Image Processing
@@ -27,12 +27,12 @@ I initially performed little image processing but did add a few steps as I exper
   * Defective images (looking down, etc.)
   * Individuals with facemasks (Due to COVID-19 period)
   
-## Learnings
+# Learnings
 1. Batch size matters
 2. Close-up portraits are more difficult to train
 3. It gets to a point where many faces are incredibly similar
 
-# Training
+# Experimentation
 ## First Run
 With my first attempt at generating mugshots, I went with a relatively simple approach to first understand the architecture of a Generator (**G**) and Discriminator (**D**). I did not achieve great results in this first run and came to a point at about 700 epochs where the gradients between the **D** and **G** continually diverged.
 
@@ -77,7 +77,9 @@ Using only the mugshots from Florida, I ran for more than 400,000 iterations wit
 
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/256_362100.png" width="800">  
 
+# Final Attempt
+
 # Additional Analysis
 
-[Gender Classification](https://github.com/csmangum/portfolio/blob/master/Mugshots/Gender_Classification.ipynb)
+[Gender Classification](https://github.com/csmangum/portfolio/blob/master/Mugshots/Gender_Classification.ipynb)  
 [Age Prediction](https://github.com/csmangum/portfolio/blob/master/Mugshots/Gender_Classification.ipynb)
