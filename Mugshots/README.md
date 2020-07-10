@@ -14,7 +14,7 @@ Use Generative Adversarial Networks (GAN) to generate realistic images trained o
   * Then use a PyTorch [implementation](https://github.com/rosinality/style-based-gan-pytorch) of NVIDIA's GAN adaption named [StyleGAN](https://github.com/NVlabs/stylegan)  
 
 ## Data
-All images were sourced from two county websites. One for [Maricopa County]() in Arizona and the other for [Osceola County]() in Florida. I created webscrapers to gather inmate details and download mughsots, on a daily basis. I considered gathering images from more than two sources but ended up staying with the two. The image quality is similar but I did initially get better results from the images from Florida.
+All images were sourced from two county websites. One for [Maricopa County](https://www.mcso.org/Mugshot) in Arizona and the other for [Osceola County](https://apps.osceola.org/Apps/CorrectionsReports/Report/Daily/) in Florida. I created webscrapers to gather inmate details and download mughsots, on a daily basis. I considered gathering images from more than two sources but ended up staying with the two. The image quality is similar but I did initially get better results from the images from Florida.
 
 ### Image Processing
 I initially performed little image processing but did add a few steps as I experimented more and more. Here are the steps I took to prepare the images for training:
@@ -82,7 +82,7 @@ Using only the mugshots from Florida, I ran for more than 400,000 iterations wit
 # Additional Analysis
 
 * [Gender Classification](https://github.com/csmangum/portfolio/blob/master/Mugshots/Gender_Classification.ipynb)  
-  * Using Keras Convolutional Neural Network (CNN)
-  * Achieved reasonbable success with an ROC-AUC of 0.96
-  * Performed poorly when using non mugshot images (ROC-AUC 0.61)
+  * Using Keras and a Convolutional Neural Network (CNN)
+  * Achieved reasonable success with a ROC-AUC of 0.96
+  * Performed poorly when using non-mugshot images (ROC-AUC: 0.61)
 * [Age Prediction]()
