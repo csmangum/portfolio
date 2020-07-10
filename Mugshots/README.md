@@ -14,7 +14,7 @@ Use Generative Adversarial Networks (GAN) to generate realistic images trained o
   * Then use a PyTorch [implementation](https://github.com/rosinality/style-based-gan-pytorch) of NVIDIA's GAN adaption named [StyleGAN](https://github.com/NVlabs/stylegan)  
 
 ## Data
-All images were sourced from two county websites. One for Maricopa County in Arizona and the other for Osceola County in Florida. I created webscrapers to gather inmate details and download mughsots, on a daily basis. I considered gathering images from more than two sources but ended up staying with the two. The image quality is similar but I did initially get better results from the images from Florida.
+All images were sourced from two county websites. One for [Maricopa County]() in Arizona and the other for [Osceola County]() in Florida. I created webscrapers to gather inmate details and download mughsots, on a daily basis. I considered gathering images from more than two sources but ended up staying with the two. The image quality is similar but I did initially get better results from the images from Florida.
 
 ### Image Processing
 I initially performed little image processing but did add a few steps as I experimented more and more. Here are the steps I took to prepare the images for training:
@@ -55,7 +55,7 @@ In this attempt I used only images from the Florida subset since the image quali
 
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/fake_samples_epoch_1190.png" width="800">
 
-## Third Run
+## 3. Third Run
 Using only the mugshots from Florida, I ran for more than 400,000 iterations with the StyleGAN architecture getting decent results. There was still some anomolys and a lot of the faces still didn't look realistic. In my next approach I will use mugshots from both state agencies.
 
 **Details:**  
@@ -67,7 +67,7 @@ Using only the mugshots from Florida, I ran for more than 400,000 iterations wit
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/427100.png" width="800">
 
 
-## Fourth Run
+## 4. Fourth Run
 
 **Details:**  
 * Image size:  
