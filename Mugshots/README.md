@@ -13,10 +13,10 @@ Use Generative Adversarial Networks (GAN) to generate realistic images trained o
   * First following the [original](https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf) framework
   * Then use a PyTorch [implementation](https://github.com/rosinality/style-based-gan-pytorch) of NVIDIA's GAN adaption named [StyleGAN](https://github.com/NVlabs/stylegan)  
 
-# Data
+## Data
 All images were sourced from two county websites. One for Maricopa County in Arizona and the other for Osceola County in Florida. I created webscrapers to gather inmate details and download mughsots, on a daily basis. I considered gathering images from more than two sources but ended up staying with the two. The image quality is similar but I did initially get better results from the images from Florida.
 
-## Image Processing
+### Image Processing
 I initially performed little image processing but did add a few steps as I experimented more and more. Here are the steps I took to prepare the images for training:
 
 * Filter out images where the face covered more than 40% of the image
@@ -27,13 +27,13 @@ I initially performed little image processing but did add a few steps as I exper
   * Defective images (looking down, etc.)
   * Individuals with facemasks (Due to COVID-19 period)
   
-# Learnings
+## Learnings
 1. Batch size matters
 2. Close-up portraits are more difficult to train
 3. It gets to a point where many faces are incredibly similar
 
 # Experimentation
-## First Run
+## * First Run
 With my first attempt at generating mugshots, I went with a relatively simple approach to first understand the architecture of a Generator (**G**) and Discriminator (**D**). I did not achieve great results in this first run and came to a point at about 700 epochs where the gradients between the **D** and **G** continually diverged.
 
 **Details:**  
@@ -44,7 +44,7 @@ With my first attempt at generating mugshots, I went with a relatively simple ap
 
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/fake_samples_epoch_0999.png" width="800">
 
-## Second Run
+## * Second Run
 In this attempt I used only images from the Florida subset since the image quality seemed more uniform and focused. Even after 1,000 iterations the model hit it's limit at this resolution. This was the moment I decided to use the StyleGAN approach for more detailed images.
 
 **Details:**  
