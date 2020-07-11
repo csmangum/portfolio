@@ -19,7 +19,7 @@ All images were sourced from two county websites. One for [Maricopa County](http
 ### Image Processing
 I initially performed little image processing but did add a few steps as I experimented more and more. Here are the steps I took to prepare the images for training:
 
-* Filter out images where the face covered more than 40% of the image
+* Filter out images where the face covered more than 50% of the image
 * Center cropped on the face
 * Resized the image to 64 pixels (StyleGAN eventually resized at multiple pixel values)
 * Manually deleted images that were:
