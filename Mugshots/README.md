@@ -38,8 +38,8 @@ I initially performed little image processing but did add a few steps as I exper
 With my first attempt at generating mugshots, I went with a relatively simple approach to first understand the architecture of a Generator (**G**) and Discriminator (**D**). I did not achieve great results in this first run and came to a point at about 700 epochs where the gradients between the **D** and **G** continually diverged.
 
 **Details:**  
-* Image size: 64x64
-* Image count:
+* Image size: 32x32
+* Image count: 708
 * Iterations: 1,000
 * Method: DGAN  
 
@@ -50,8 +50,8 @@ In this attempt I used only images from the Florida subset since the image quali
 
 **Details:**  
 * Image size: 64x64
-* Image count:
-* Iterations: 1,000
+* Image count: 703
+* Iterations: 1,200
 * Method: DGAN  
 
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/fake_samples_epoch_1190.png" width="800">
@@ -60,8 +60,8 @@ In this attempt I used only images from the Florida subset since the image quali
 Using only the mugshots from Florida, I ran for more than 400,000 iterations with the StyleGAN architecture getting decent results. There was still some anomolys and a lot of the faces still didn't look realistic. In my next approach I will use mugshots from both state agencies.
 
 **Details:**  
-* Image size:  
-* Image count:
+* Image size: 128x128
+* Image count: 1,073
 * Iterations: 427,000
 * Method: StyleGAN  
 
@@ -71,8 +71,8 @@ Using only the mugshots from Florida, I ran for more than 400,000 iterations wit
 ## 4. Fourth Run
 
 **Details:**  
-* Image size:  
-* Image count:
+* Image size: 256x256
+* Image count: 1,309 (2,618 when mirrored)
 * Iterations: 362,000
 * Method: StyleGAN  
 
