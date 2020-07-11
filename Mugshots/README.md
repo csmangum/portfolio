@@ -87,7 +87,7 @@ Using only the mugshots from Florida, I ran for more than 400,000 iterations wit
   * Performed poorly when using non-mugshot images (ROC-AUC: 0.61)
 * [Age - Regression]()
   * Using Convolutional Neural Networks (CNN) in Keras to predict age
-  * RMSE on validation set of around 4 years
+  * RMSE on validation set of around 10 years
 * [Age - Classification]()
   * Using Convolutional Neural Networks (CNN) in Keras to predict age
   * Binned ages into # buckets
