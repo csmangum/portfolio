@@ -89,7 +89,7 @@ Using only the mugshots from Florida, I ran for more than 400,000 iterations wit
 * [Age - Regression](https://github.com/csmangum/portfolio/blob/master/Mugshots/Age_Keras_Regression.ipynb)
   * CNNs in Keras to predict age
   * RMSE on validation at 11.7 years
-* [Age - Classification]()
+* [Age - Classification](https://github.com/csmangum/portfolio/blob/master/Mugshots/Age_Keras_Classification.ipynb)
   * CNNs in Keras to predict age
   * Binned ages into 4 buckets
   * Achieved mediocre success with a ROC-AUC ranging from 0.63 to 0.76
