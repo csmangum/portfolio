@@ -91,5 +91,5 @@ Using only the mugshots from Florida, I ran for more than 400,000 iterations wit
   * RMSE on validation at 11.7 years
 * [Age - Classification]()
   * CNNs in Keras to predict age
-  * Binned ages into # buckets
-  * Achieved mediocre success with a ROC-AUC of 
+  * Binned ages into 4 buckets
+  * Achieved mediocre success with a ROC-AUC ranging from 0.63 to 0.76
