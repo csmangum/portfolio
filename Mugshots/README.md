@@ -11,7 +11,7 @@ Use Generative Adversarial Networks (GAN) to generate realistic images trained o
 * Create novel image dataset through [web scraping](https://github.com/csmangum/portfolio/blob/master/Mugshots/get_mugshots.ipynb)
 * Experiment with the GAN architecture
   * First following the [original](https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf) framework
-  * Then use an awesome PyTorch [implementation](https://github.com/rosinality/style-based-gan-pytorch) of NVIDIA's Tensorflow example ([StyleGAN])(https://github.com/NVlabs/stylegan)  
+  * Then use an awesome PyTorch [implementation](https://github.com/rosinality/style-based-gan-pytorch) of NVIDIA's Tensorflow example ([StyleGAN](https://github.com/NVlabs/stylegan))  
 
 ## Data
 All images were sourced from two county websites. One for [Maricopa County](https://www.mcso.org/Mugshot) in Arizona and the other for [Osceola County](https://apps.osceola.org/Apps/CorrectionsReports/Report/Daily/) in Florida. I created a webscraper to gather inmate details and download mughsots daily. I considered gathering images from more than two sources but ended up staying with the two. The image quality is similar, but I did initially get better results from the images from Florida.
