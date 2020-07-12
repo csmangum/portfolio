@@ -80,6 +80,16 @@ Using only the mugshots from Florida, I ran for more than 400,000 iterations wit
 
 # Final Attempt
 
+* Image size: 512x512
+* Image count: 5,000
+* Iterations: 
+* Method: StyleGAN  
+
+# Future
+1. Train on larger set of mugshots
+2. Experiment with SyleGAN2
+3. Create a webapp to manipulate image based on "styles" (i.e. beard, age, etc.)
+
 # Additional Analysis
 
 * [Sex - Classification](https://github.com/csmangum/portfolio/blob/master/Mugshots/Gender_Classification.ipynb)  
