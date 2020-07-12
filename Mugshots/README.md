@@ -21,12 +21,12 @@ I initially performed little image processing but did add a few steps as I exper
 
 * Filter out images where the face covered more than 50% of the image
 * Center cropped on the face
-* Resized the image to 64 pixels (StyleGAN eventually resized at multiple pixel values)
+* Resized the image (StyleGAN eventually resized at multiple pixel values)
 * Manually deleted images that were:
   * Out-of-focus
   * Defective images (looking down, etc.)
   * Individuals with facemasks (Due to COVID-19 period)
-  * Removed individuals with glasses (on final run)
+  * Individuals with glasses (on final run)
   
 ## Learnings
 1. I can get decent results from very few mugshots
