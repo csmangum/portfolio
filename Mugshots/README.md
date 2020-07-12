@@ -11,10 +11,10 @@ Use Generative Adversarial Networks (GAN) to generate realistic images trained o
 * Create novel image dataset through [web scraping](https://github.com/csmangum/portfolio/blob/master/Mugshots/get_mugshots.ipynb)
 * Experiment with the GAN architecture
   * First following the [original](https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf) framework
-  * Then use a PyTorch [implementation](https://github.com/rosinality/style-based-gan-pytorch) of NVIDIA's GAN adaption named [StyleGAN](https://github.com/NVlabs/stylegan)  
+  * Then use an awesome PyTorch [implementation](https://github.com/rosinality/style-based-gan-pytorch) of NVIDIA's Tensorflow example ([StyleGAN])(https://github.com/NVlabs/stylegan)  
 
 ## Data
-All images were sourced from two county websites. One for [Maricopa County](https://www.mcso.org/Mugshot) in Arizona and the other for [Osceola County](https://apps.osceola.org/Apps/CorrectionsReports/Report/Daily/) in Florida. I created webscrapers to gather inmate details and download mughsots, on a daily basis. I considered gathering images from more than two sources but ended up staying with the two. The image quality is similar but I did initially get better results from the images from Florida.
+All images were sourced from two county websites. One for [Maricopa County](https://www.mcso.org/Mugshot) in Arizona and the other for [Osceola County](https://apps.osceola.org/Apps/CorrectionsReports/Report/Daily/) in Florida. I created a webscraper to gather inmate details and download mughsots daily. I considered gathering images from more than two sources but ended up staying with the two. The image quality is similar, but I did initially get better results from the images from Florida.
 
 ### Image Processing
 I initially performed little image processing but did add a few steps as I experimented more and more. Here are the steps I took to prepare the images for training:
@@ -29,9 +29,10 @@ I initially performed little image processing but did add a few steps as I exper
   * Removed individuals with glasses (on final run)
   
 ## Learnings
-1. Batch size matters
-2. Close-up portraits are more difficult to train
-3. It gets to a point where many faces are incredibly similar
+1. I can get decent results from very few mugshots
+2. Batch size matters
+3. Close-up portraits are more difficult to train
+4. It gets to a point where many faces are incredibly similar
 
 # Experimentation
 ## 1. First Run
@@ -46,7 +47,7 @@ With my first attempt at generating mugshots, I went with a relatively simple ap
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/fake_samples_epoch_0999.png" width="800">
 
 ## 2. Second Run
-In this attempt I used only images from the Florida subset since the image quality seemed more uniform and focused. Even after 1,000 iterations the model hit it's limit at this resolution. This was the moment I decided to use the StyleGAN approach for more detailed images.
+In this attempt I used only images from the Florida subset since the image quality seemed more uniform and focused. Even after 1,000 iterations the model hit its limit at this resolution. This was the moment I decided to use the StyleGAN approach for more detailed images.
 
 **Details:**  
 * Image size: 64x64
@@ -57,7 +58,7 @@ In this attempt I used only images from the Florida subset since the image quali
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/fake_samples_epoch_1190.png" width="800">
 
 ## 3. Third Run
-Using only the mugshots from Florida, I ran for more than 400,000 iterations with the StyleGAN architecture getting decent results. There was still some anomolys and a lot of the faces still didn't look realistic. In my next approach I will use mugshots from both state agencies.
+Using only the mugshots from Florida, I ran for more than 400,000 iterations with the StyleGAN architecture getting decent results. There was still some anomalies and a lot of the faces still didn't look realistic. In my next approach I will use mugshots from both state agencies.
 
 **Details:**  
 * Image size: 128x128
@@ -69,6 +70,7 @@ Using only the mugshots from Florida, I ran for more than 400,000 iterations wit
 
 
 ## 4. Fourth Run
+I augmented my training set by mirroring every image and was able to get the best results yet. The training time did take a couple weeks on a GTX 970 secondary machine I used solely for training. I also started to update the training script to fit my needs to better evaluate training performance.
 
 **Details:**  
 * Image size: 256x256
