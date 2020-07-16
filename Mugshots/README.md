@@ -41,7 +41,7 @@ With my first attempt at generating mugshots, I went with a relatively simple ap
 <ins>text</ins>  
 
 **Details:**  
-* **Image size**: 32x32
+* **<ins>Image size</ins>**: 32x32
 * **Image count**: 708
 * **Iterations**: 1,000
 * **Method**: DGAN  
