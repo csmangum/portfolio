@@ -39,10 +39,10 @@ I initially performed little image processing but did add a few steps as I exper
 With my first attempt at generating mugshots, I went with a relatively simple approach to first understand the architecture of a Generator (**G**) and Discriminator (**D**). I did not achieve great results in this first run and came to a point at about 700 epochs where the gradients between the **D** and **G** continually diverged.
 
 **Details:**  
-* Image size: 32x32
-* Image count: 708
-* Iterations: 1,000
-* Method: DGAN  
+* ***Image size***: 32x32
+* ***Image count***: 708
+* ***Iterations***: 1,000
+* ***Method***: DGAN  
 
 <img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/fake_samples_epoch_0999.png" width="800">
 
