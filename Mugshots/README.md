@@ -105,3 +105,10 @@ I augmented my training set by mirroring every image and was able to get the bes
   * CNNs in Keras to predict age
   * Binned ages into 4 buckets
   * Achieved mediocre success with a ROC-AUC ranging from 0.63 to 0.76
+  
+  # Acknowledgments
+  A lot of great resources that helped me get a grasp and better understand GANs and the continually changing landscape. Specific thanks to:
+  * [NVIDIA](https://github.com/NVlabs/stylegan)  
+  * [rosinality](https://github.com/rosinality/style-based-gan-pytorch)  
+  * [sentdex](https://www.youtube.com/channel/UCfzlCWGWYyIQ0aLC5w48gBQ)  
+  * [Machine Learning Mastery](https://machinelearningmastery.com/introduction-to-style-generative-adversarial-network-stylegan/)  
