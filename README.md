@@ -1,6 +1,6 @@
 ## Primary Portfolio Projects: 
-[<img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/mugfakes_title1.jpg" width="900">](https://github.com/csmangum/mugfakes) 
-[<img src="https://github.com/csmangum/portfolio/blob/master/Mugshots/img/grid_3x2_mosaic.jpg" width="900">](https://github.com/csmangum/mugfakes)
+[<img src="https://github.com/csmangum/mugfakes/blob/master/img/mugfakes_title1.jpg" width="900">](https://github.com/csmangum/mugfakes) 
+[<img src="https://github.com/csmangum/mugfakes/blob/master/img/grid_3x2_mosaic.jpg" width="900">](https://github.com/csmangum/mugfakes)
 
 ---
 
