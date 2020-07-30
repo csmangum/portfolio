@@ -10,8 +10,8 @@
 
 ## Additional Work:
 - [Comedy Bot](https://github.com/csmangum/comedy_bot) - Twitter bot built with GPT-2 including many other features
-- [PyPinion](https://github.com/csmangum/pypinion) - NLP model designed to identify opinions in text
-- [Named Entity Extraction](https://github.com/csmangum/portfolio/blob/master/tools/named_entity/named_entity.py) - Script to extract people from a document
+- [PyPinion](https://github.com/csmangum/pypinion) - NLP model designed to identify opinions in text using RoBERTa
+- [Named Entity Extraction](https://github.com/csmangum/portfolio/blob/master/tools/named_entity/named_entity.py) - Script to extract people from a document using Spacy
 
 
 ## Going Deep In Machine Learning:
