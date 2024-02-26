@@ -2,15 +2,15 @@
 
 
 ### Intelligent Agents
-- [Dooders](https://github.com/csmangum/Dooders): Long-term project to research and develop intelligent agents in a simulated environment.
-- [Pycoli](https://github.com/csmangum/PyColi): Simulating an E. coli bacteria in a nutrient soup using different movement models.
-- [Pyman](https://github.com/csmangum/Py-Man): Experimenting with different AI methods in PacMan
+- [Dooders](https://github.com/csmangum/Dooders) - Long-term project to research and develop intelligent agents in a simulated environment.
+- [Pycoli](https://github.com/csmangum/PyColi) - Simulating an E. coli bacteria in a nutrient soup using different movement models.
+- [Pyman](https://github.com/csmangum/Py-Man) - Experimenting with different AI methods in PacMan
 
 
 
 ### Generative AI
-- [MugFakes](https://github.com/csmangum/mugfakes): Using Generative Adversarial Networks (GAN) to generate fake mugshots from data sourced from public sources.
-- [Generative Cellular Automata](https://github.com/csmangum/GCA): Simple implementation to learn elementary automata rules with a Convolutional Neural Network (CNN).
+- [MugFakes](https://github.com/csmangum/mugfakes) - Using Generative Adversarial Networks (GAN) to generate fake mugshots from data sourced from public sources.
+- [Generative Cellular Automata](https://github.com/csmangum/GCA) - Simple implementation to learn elementary automata rules with a Convolutional Neural Network (CNN).
 
 
 
@@ -23,15 +23,15 @@
 
 
 ### Machine Learning
-- [Airbnb Price Prediction](https://github.com/csmangum/portfolio/tree/master/Airbnb%20Price%20Prediction): Predicting the price of Airbnb units using different applications of Gradient Boosted Decision Trees.
+- [Airbnb Price Prediction](https://github.com/csmangum/portfolio/tree/master/Airbnb%20Price%20Prediction) - Predicting the price of Airbnb units using different applications of Gradient Boosted Decision Trees.
 
 
 
 ### Writing
 
-- [Generating Cellular Automata](https://rememberization.substack.com/p/generating-cellular-automata): Training a neural network to generate products of simple and discrete rules with a Convolutional Neural Network (CNN).
-- [The Permeating Power of Great Ideas](https://rememberization.substack.com/p/the-permeating-power-of-great-ideas): How we got the numbers we use today.
-- [Life Without a Brain](https://rememberization.substack.com/p/life-without-a-brain): Simulating E. coli movement with different algorithmic rules.
-- [If You Build It, They Will Learn](https://rememberization.substack.com/p/if-you-build-it-they-will-learn): Learning with simple data and a simple neural network.
+- [Generating Cellular Automata](https://rememberization.substack.com/p/generating-cellular-automata) - Training a neural network to generate products of simple and discrete rules with a Convolutional Neural Network (CNN).
+- [The Permeating Power of Great Ideas](https://rememberization.substack.com/p/the-permeating-power-of-great-ideas) - How we got the numbers we use today.
+- [Life Without a Brain](https://rememberization.substack.com/p/life-without-a-brain) - Simulating E. coli movement with different algorithmic rules.
+- [If You Build It, They Will Learn](https://rememberization.substack.com/p/if-you-build-it-they-will-learn) - Learning with simple data and a simple neural network.
 
  
