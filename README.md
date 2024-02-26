@@ -9,7 +9,7 @@
 
 
 ### Generative AI
-- [MugFakes](https://github.com/csmangum/mugfakes) - Using Generative Adversarial Networks (GAN) to generate fake mugshots from data sourced from public sources.
+- [MugFakes](https://github.com/csmangum/mugfakes) - Using Generative Adversarial Networks (GAN) to generate fake mugshots from data sourced from public APIs.
 - [Generative Cellular Automata](https://github.com/csmangum/GCA) - Simple implementation to learn elementary automata rules with a Convolutional Neural Network (CNN).
 
 
