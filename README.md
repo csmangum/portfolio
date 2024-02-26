@@ -1,7 +1,7 @@
 ## Chris Mangum Portfolio: 
 
 
-### Intelligenct Agents
+### Intelligent Agents
 - [Dooders](https://github.com/csmangum/Dooders): Long-term project to research and develop intelligent agents in a simulated environment.
 - [Pycoli](https://github.com/csmangum/PyColi): Simulating an E. coli bacteria in a nutrient soup using different movement models.
 - [Pyman](https://github.com/csmangum/Py-Man): Experimenting with different AI methods in PacMan
@@ -9,7 +9,7 @@
 
 
 ### Generative AI
-- [MugFakes](https://github.com/csmangum/mugfakes): Using Generative Adversarial Networks (GAN) to generate fake mughsots from data sourced from public sources.
+- [MugFakes](https://github.com/csmangum/mugfakes): Using Generative Adversarial Networks (GAN) to generate fake mugshots from data sourced from public sources.
 - [Generative Cellular Automata](https://github.com/csmangum/GCA): Simple implementation to learn elementary automata rules with a Convolutional Neural Network (CNN).
 
 
